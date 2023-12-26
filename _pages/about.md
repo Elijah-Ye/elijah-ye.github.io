@@ -6,12 +6,11 @@ subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: profile_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Urbana,IL,US</p>
+    <p>Wenzhou,Zhejiang,China</p>
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
@@ -19,8 +18,14 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+<h4 id="my_info"><code class="language-plaintext highlighter-rouge"> My Info</code></h4>
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Hi! 👋
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My name is Elijah Gaohan Ye. `Elijah` is my English first name, and `Gaohan` is my Chinese first name. I am an undergraduate student at [University of Illinois](https://illinois.edu/), studying [Computer Engineering](https://ece.illinois.edu/). 
+
+<h4 id="my_info"><code class="language-plaintext highlighter-rouge"> My Interest </code></h4>
+
+Still trying to figure out where my research interests lay.
+
+Other than my academic interest, I love to play basketball and workout.
