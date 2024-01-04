@@ -4,7 +4,7 @@ title:  a post to log my journey of building my portfolio website
 date: 2023-12-28 09:30:00
 description: this is my journey
 tags: project-log
-categories: personal post
+categories: personal posts
 tikzjax: false
 ---
 ### Getting Started
