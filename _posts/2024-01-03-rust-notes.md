@@ -130,3 +130,73 @@ fn main() {
   }
 }
 ```
+
+`Trait:` a collection of methods in Rust.  i.e. In OOD (Object Oriented Design) there are abstract classes and interfaces. In Functional Language, there are type classes.
+
+`try.into()` returns `Result` which canbe success or fail. If fail, it will terminate the current program. 
+
+Due to the nature of floating point numbers, **avoid using floating point equality**.
+
+### Rational, Complex and different number types
+**Static method** is a function that's available for a type, but it's not an instance of that type. **Instance method** operates on the instance of the type. **Static method** associated with the type, but you can call it without having an existing instance of the type, like `new()`.
+
+Use `new()` if you can. It involves less clutter. 
+
+### Flow Control
+```rust
+for item in container {
+  // some code
+}
+```
+
+<br>
+
+There are some **pitfalls** in Rust's flow control:
+  
+  - Once `container` is accessed, it becomes invalid.
+  - Reuse requires `&container`.
+  - Modify the item in the requires `&mut container`.
+
+<br>
+
+**Range-based for loop**
+```rust
+for _ in 0..10 {
+  //some code
+  // 0..10 is excluding 10
+  // 0..=10 is including 10
+}
+```
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/for_loop.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+<br>
+
+**while & loop**
+```rust
+loop {
+  // some code
+  // this is mainly used for servers
+}
+```
+
+<br>
+
+**Break out a nested loop via labels**
+```rust
+'outer: for x in 0.. {
+  for y in 0.. {
+    for z in 0.. {
+      if x + y + z > 1000 {
+        break 'outer;
+      }
+ 
+      // ...
+    }
+  }
+}
+```
+
