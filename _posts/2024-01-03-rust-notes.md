@@ -199,4 +199,63 @@ loop {
   }
 }
 ```
+<br>
+
+**Rust has no `goto`**
+
+<br>
+
+**Conditional Statements**
+```rust
+if (){
+  // in rust there is no "truthy" or "falsey" statements
+  // unlike C/C++, where 0 means false and 1 means true
+  // in rust, there is only true or false
+}
+else if (){
+
+}
+else {
+
+}
+```
+<br>
+
+`match` is like `switch` in C/C++. However, `match` needs all possible options to be handled. 
+```rust
+fn main() {
+  let needle = 42;
+  let haystack = [1, 1, 2, 5, 14, 42, 132, 429, 1430, 4862];
+ 
+  for item in &haystack {
+    let result = match item {
+      42 | 132 => "hit!",
+      _ => "miss", // _ means all other cases 
+    };
+ 
+    if result == "hit!" {
+      println!("{}: {}", item, result);
+    }
+  }
+}
+```
+
+<br>
+
+### Defining Functions
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/function.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<br>
+
+### Using References
+`reference` is a value that stands in place for another value.
+
+`&` and `*` are used for reference and dereference. These operators act as unary operators, meaning that these only take one operand. 
+
+
+
+
 
