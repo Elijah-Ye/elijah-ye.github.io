@@ -10,7 +10,6 @@ related_posts: false
 toc:
   sidebar: left
 ---
-This post shows how to add a table of contents in the beginning of the post.
 
 ## Chapter 1 Introducing Rust
 

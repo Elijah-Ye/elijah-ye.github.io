@@ -33,6 +33,12 @@ To see the template running, open your browser and go to `http://localhost:4000`
 ### Projects
 I will now start to incorporate all of my undergraduate projects into the Project section.
 
+### Bug Log
+1. I encountered this bug when I was trying to add a new post. I searched up [online](https://github.com/alshedivat/al-folio/issues/1828) and I found this quick fix, thought it might not be the best fix, but it works in my case.
+    > change the `related_blog_post` from `true` tp `false` then it should work. 
+
+
+
 ### Exploring
 As for now, I am justing reading through the `#sample-posts` to see what the template has to offer. I will update if I find something really interesting!
 
