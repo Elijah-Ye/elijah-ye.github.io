@@ -52,7 +52,7 @@ Then, you can run the project by running `$ python app.py`
 - Style the page using CSS classes, properties, and values
 - Use the `Bootstrap` framework for faster development
 
-### Render templates and use static assets
+## Render templates and use static assets
 First, create a folder called `templates`.
 
 Then, Within our templates folder, we initialize our html file - `home.html` which contains the information and layout of what we want to show on our route page.
@@ -82,7 +82,7 @@ Now before we start any real development on the html page, you should grab pen a
     </div>
 </div>
 
-### Using Bootstrap for faster Development 
+## Using Bootstrap for faster Development 
 
 Instead of typing whole CSS manually for every website, you can use a pre existing set of styles that have been created by some good designers.  
 
@@ -115,5 +115,87 @@ Let's look at a few classes we will add to make our website look more presentabl
 
 For any feature you want, you can always look up into the bootstrap documentation. A quick search for any thing is to do `cmd` + `k` in `Bootstrap` documentation. 
 
+# Step 3 - Dynamic Data & Cloud Deployment
+
+- Render dynamic data using Jinja template tags
+- Add an API route to return JSON
+- Deploy the project to Render.com 
+- Connect a domain with Render deployment
+
+## Render Dynamic Data using Jinja template tags
+We will create a dictionary of jobs that mimic things that would be returned from a database. 
+
+```python
+from flask import Flask, render_template, jsonify
+
+app = Flask(__name__)
+
+JOBS=[
+  {
+    'id': 1,
+    'title': 'Data Analyst',
+    'location': 'Bengaluru, India',
+    'salary': 'Rs. 100,000'
+  },
+  {
+    'id': 2,
+    'title': 'Data Engineer',
+    'location': 'Delhi, India',
+    'salary': 'Rs. 150,000'
+  },
+  {
+    'id': 3,
+    'title': 'Frontend Engineer',
+    'location': 'Remote'
+  },
+  {
+    'id': 4,
+    'title': 'Backend Engineer',
+    'location': 'San Francisco, USA',
+    'salary': '$150,000'
+  }
+]
+```
+
+### templates
+We will add an argument in `render_template` as `jobs`
+```python
+@app.route("/")
+def hello_world():
+  return render_template('home.html', 
+                        jobs=JOBS)
+```
+Then inside `home.html`, if you do `{{jobs}}`, you will see that the dictionary was displayed as strings in your page. 
+
+You can also use these following code to render it nicely:
+```html
+  {% for job in jobs %}
+    {% include 'jobItems.html' %}
+  {% endfor %}
+```
+Then inside the `jobItems.html`:
+```html
+<div class="mb-4 border-bottom pb-3 row">
+  <div class="col-10">
+    <h4>{{job['title']}}</h4>
+    <div><b>Location:</b> {{job['location']}}</div>
+    {% if 'salary' in job %}
+    <div><b>Salary:</b> {{job['salary']}}</div>
+    {% endif %}
+  </div>
+  <div class="col-2 text-right">
+    <button type="button" class="btn btn-outline-primary align-middle">Apply</button>
+  </div>
+</div>
+```
+
+## Adding API Route to Return JSON
+First we willl need to add the function `jsonify`, just include the library. Then add:
+```python
+@app.route("/api/jobs")
+def list_jobs():
+  return jsonify(JOBS)
+``` 
+Once you did that, at the home url, you could do `/api/jobs`, and you will see the dictionary to be returned. 
 
 
