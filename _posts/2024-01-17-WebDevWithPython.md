@@ -169,12 +169,15 @@ Then inside `home.html`, if you do `{{jobs}}`, you will see that the dictionary 
 
 You can also use these following code to render it nicely:
 ```html
+{% raw %}
   {% for job in jobs %}
     {% include 'jobItems.html' %}
   {% endfor %}
+{% endraw %}
 ```
 Then inside the `jobItems.html`:
 ```html
+{% raw %}
 <div class="mb-4 border-bottom pb-3 row">
   <div class="col-10">
     <h4>{{job['title']}}</h4>
@@ -187,6 +190,7 @@ Then inside the `jobItems.html`:
     <button type="button" class="btn btn-outline-primary align-middle">Apply</button>
   </div>
 </div>
+{% endraw %}
 ```
 
 ## Adding API Route to Return JSON
