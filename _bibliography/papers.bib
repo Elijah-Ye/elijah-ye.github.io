@@ -3,6 +3,27 @@
 
 @string{aps = {American Physical Society,}}
 
+@article{LCA.2024.3397747,
+  abbr={CAL},
+  title={Exploiting Intel Advanced Matrix Extensions (AMX) for Large Language Model Inference},
+  author={Kim, Hyungyo and Ye, Gaohan and Wang, Nachuang and Yazdanbakhsh, Amir and Kim, Nam Sung},
+  abstract={The ever-increasing number of parameters in Large Language Models (LLMs) demands many expensive GPUs for both inference and training. This is because even such a high-end GPU such as NVIDIA A100 can store only a subset of parameters due to its limited memory capacity. To reduce the number of required GPUs, especially for inference, we may exploit the large memory capacity of (host) CPU to store not only all the model parameters but also intermediate outputs which also require a substantial memory capacity. However, this necessitates frequent data transfers between CPU and GPU over the slow PCIe interface, creating a bottleneck that hinders the accomplishment of both low latency and high throughput in inference. To address such a challenge, we first propose CPU-GPU cooperative computing that exploits the Advanced Matrix Extensions (AMX) capability of the latest Intel CPU, codenamed Sapphire Rapids (SPR). Second, we propose an adaptive model partitioning policy that determines the layers of a given LLM to be run on CPU and GPU, respectively, based on their memory capacity requirement and arithmetic intensity. As CPU executes the layers with large memory capacity but low arithmetic intensity, the amount of data transferred through the PCIe interface is significantly reduced, thereby improving the LLM inference performance. Our evaluation demonstrates that CPU-GPU cooperative computing, based on this policy, delivers 12.1x lower latency and 5.4x higher throughput than GPU-only computing for OPT-30B inference when both CPU-GPU and GPU-only computing store the model in CPU memory.},
+  journal={IEEE Computer Architecture Letters},
+  volume={23},
+  issue={1},
+  pages={117--120},
+  numpages={4},
+  year={2024},
+  month={May},
+  publisher={IEEE Computer Architecture Letters},
+  doi={10.1109/LCA.2024.3397747},
+  url={https://doi.org/10.1109/LCA.2024.3397747},
+  html={https://doi.org/10.1109/LCA.2024.3397747},
+  pdf={Exploiting_Intel_Advanced_Matrix_Extensions_AMX_for_Large_Language_Model_Inference.pdf},
+  dimensions={true},
+  selected={true}
+}
+
 @book{einstein1956investigations,
   bibtex_show={true},
   title={Investigations on the Theory of the Brownian Movement},

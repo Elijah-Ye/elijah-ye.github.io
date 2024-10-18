@@ -1,12 +1,8 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - Elijah-Ye
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - Elijah-Ye/RISC-V_Pipelined_Processor
+  - Elijah-Ye/TCP_Protocol
+  - Elijah-Ye/Intro-To-Parallel-Programming-CUDA
+  - Elijah-Ye/UIUC_Crime_Map
