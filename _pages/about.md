@@ -22,7 +22,7 @@ social: true  # includes social icons at the bottom of the page
 
 Hi! 👋
 
-My name is Elijah Gaohan Ye. `Elijah` is my English first name, and `Gaohan` is my Chinese first name. I am an undergraduate student at [University of Illinois](https://illinois.edu/), studying [Computer Engineering](https://ece.illinois.edu/). 
+My name is Elijah Gaohan Ye. `Elijah` is my English first name, and `Gaohan` is my Chinese first name. I am an Master of Science student at [University of Illinois](https://illinois.edu/), studying [Electrical and Computer Engineering](https://ece.illinois.edu/). 
 
 <h4 id="my_info"><code class="language-plaintext highlighter-rouge"> $cat my_interest </code></h4>
 
