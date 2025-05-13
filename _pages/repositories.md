@@ -6,7 +6,7 @@ description: Some of my repositories from my course projects or my personal proj
 nav: true
 nav_order: 4
 ---
-
+<!-- 
 ## GitHub users
 
 {% if site.data.repositories.github_users %}
@@ -33,7 +33,7 @@ nav_order: 4
 {% endif %}
 {% endif %}
 
-## GitHub Repositories
+## GitHub Repositories -->
 
 {% if site.data.repositories.github_repos %}
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
