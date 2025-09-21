@@ -255,10 +255,22 @@ blockquote {
 
   .navbar-brand {
     color: var(--global-text-color);
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    line-height: 1;
+  }
+
+  .navbar-nav {
+    align-items: center;
   }
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
+    display: flex;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 
     &:hover {
       color: var(--global-hover-color);
