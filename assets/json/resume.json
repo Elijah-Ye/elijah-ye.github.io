@@ -68,6 +68,33 @@
         "Conducted system level verification for the DUT using a custom UVM testbench",
         "Developed and executed detailed test plans, identifying bugs and successfully debugging and resolving issues"
       ]
+    },
+    {
+      "name": "University of Illinois at Urbana-Champaign",
+      "position": "Teaching Assistant for Computer System Engineering, ECE 391",
+      "url": "https://illinois.edu",
+      "startDate": "2023-01-01",
+      "endDate": "2024-12-01",
+      "summary": "Teaching assistant for operating systems course where students build custom operating systems.",
+      "highlights": [
+        "Led weekly lab and discussion sessions, teaching students about operating system concepts including process scheduling, virtual memory, file systems, and system call implementation",
+        "Offered comprehensive support to students, addressing inquiries regarding x86, virtual memory, scheduling, file systems, and course materials",
+        "Graded over 300 student assignments and conducted demos of their custom operating systems",
+        "Collaborated with professors in the grading process for midterms and final exams"
+      ]
+    },
+    {
+      "name": "Headline (Venture Capital Company)",
+      "position": "Frontend Developer Intern",
+      "url": "https://headline.com",
+      "startDate": "2022-05-01",
+      "endDate": "2022-08-01",
+      "summary": "Frontend development internship at San Francisco-based venture capital company.",
+      "highlights": [
+        "Added display features and security auditing in a custom integration with Gmail that exposes several million highly sensitive emails across the organization using Rails backend and React frontend",
+        "Implemented internal management tool with React.js; restructured API calls to improve page latency by 30%",
+        "Improved performance of Streak CRM and Gmail integrations by fixing timeout bugs"
+      ]
     }
   ],
   "volunteer": [],
@@ -154,11 +181,12 @@
       "level": "Advanced",
       "icon": "fa-solid fa-code",
       "keywords": [
-        "System Verilog (Advanced)",
+        "SystemVerilog (Advanced)",
         "C/C++ (Advanced)",
         "UVM/OVM",
         "Python",
-        "CUDA"
+        "CUDA",
+        "Assembly (x86, RISC-V)"
       ]
     },
     {
@@ -171,7 +199,20 @@
         "RISC-V",
         "x86",
         "CXL/PCIe",
-        "Cache Design"
+        "Cache Design",
+        "Pipeline Optimization"
+      ]
+    },
+    {
+      "name": "Hardware Verification",
+      "level": "Advanced",
+      "icon": "fa-solid fa-check-circle",
+      "keywords": [
+        "Design Verification",
+        "UVM/OVM",
+        "Functional Coverage",
+        "System-Level Testing",
+        "FuSa Testing"
       ]
     },
     {
@@ -184,7 +225,8 @@
         "Git",
         "Linux",
         "Intel Extension for PyTorch",
-        "Performance Analysis"
+        "Performance Analysis",
+        "Intel MLC"
       ]
     }
   ],
@@ -227,10 +269,36 @@
       "highlights": [
         "Achieved 28.6% frequency increase and 47% cache stall reduction",
         "Secured 3rd place among 30 groups",
-        "Implemented complete 5-stage pipeline with hazard detection"
+        "Applied timing analysis and logic optimization principles for hardware-software co-design"
       ],
       "startDate": "2023-09-01",
       "endDate": "2023-12-01",
+      "url": ""
+    },
+    {
+      "name": "Linux Kernel",
+      "summary": "Built a custom Linux Kernel featuring 3 terminals and 6 processes with essential OS features.",
+      "highlights": [
+        "Implemented read-only File System, Round-Robin Scheduling, 4kB and 4MB Paging",
+        "Successfully handled interrupts, exceptions, and system calls from user programs",
+        "Developed complete kernel from scratch using C and x86 assembly"
+      ],
+      "startDate": "2022-10-01",
+      "endDate": "2022-12-01",
+      "url": ""
+    },
+    {
+      "name": "FPGA Flappy Bird Game",
+      "summary": "Developed a complete Flappy Bird game implementation on FPGA using SystemVerilog, Python, and C.",
+      "highlights": [
+        "Programmed an FPGA to output a VGA signal to draw game visuals to a monitor",
+        "Enabled keyboard-FPGA communication via SPI to run C-based keyboard drivers on SoC",
+        "Wrote Python scripts to compress PNG format into MIF format to instantiate onto the FPGA on-chip memory",
+        "Implemented state machine in SystemVerilog to animate a walking character depending on keyboard inputs",
+        "Detected collisions between the map and the player with state machine-controlled memory address into ROMs"
+      ],
+      "startDate": "2022-01-01",
+      "endDate": "2022-05-01",
       "url": ""
     }
   ]
