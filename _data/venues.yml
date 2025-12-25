@@ -1,3 +1,11 @@
+"HPCA":
+  url: https://www.hpca-conf.org/
+  color: "#0066cc"
+
+"CAL":
+  url: https://www.computer.org/csdl/letters/ca
+  color: "#B509AC"
+
 "AJP":
   url: https://aapt.scitation.org/journal/ajp
   color: "#00369f"
