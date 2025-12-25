@@ -1,14 +1,68 @@
-{% assign repo_url =  include.repository | split: '/' %}
+{% assign repo_url = include.repository | split: '/' %}
 
-{% if site.data.repositories.github_users contains repo_url.first %}
-  {% assign show_owner = false %}
-{% else %}
-  {% assign show_owner = true %}
-{% endif %}
+<a href="https://github.com/{{ include.repository }}" class="repo-card-link">
+  <div class="card hoverable repo-card">
+    <div class="card-body">
+      <h5 class="card-title">
+        <i class="fa-brands fa-github"></i> {{ repo_url[1] | replace: "-", " " | replace: "_", " " }}
+      </h5>
+      <p class="card-text text-muted">
+        <small>{{ repo_url[0] }}/{{ repo_url[1] }}</small>
+      </p>
+      <div class="repo-meta">
+        <span class="badge badge-primary">GitHub Repository</span>
+      </div>
+    </div>
+  </div>
+</a>
 
-<div class="repo p-2 text-center">
-  <a href="https://github.com/{{ include.repository }}">
-    <img class="repo-img-light w-100" alt="{{ include.repository }}" src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_light }}&show_owner={{ show_owner }}">
-    <img class="repo-img-dark w-100" alt="{{ include.repository }}" src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_dark }}&show_owner={{ show_owner }}">
-  </a>
-</div>
+<style>
+.repo-card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  min-height: 140px;
+  height: 100%;
+}
+
+.repo-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-color: var(--global-theme-color);
+}
+
+.repo-card .card-title {
+  color: var(--global-theme-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.repo-card .card-text {
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.repo-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.repo-card-link:hover {
+  text-decoration: none;
+}
+
+.repo-meta {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.repo-meta .badge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+}
+</style>
