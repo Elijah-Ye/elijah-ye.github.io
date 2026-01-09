@@ -30,13 +30,14 @@
   "work": [
     {
       "name": "Rivian Automotive",
-      "position": "Design Verification Intern, Special Project",
+      "position": "Design Verification Intern, RAP1 Silicon Team",
       "url": "https://rivian.com",
       "startDate": "2025-05-01",
       "endDate": "2025-08-01",
-      "summary": "Enhanced design verification processes and system-level testing for automotive systems.",
+      "summary": "Developed system-level testcases for RAP1 (Rivian Autonomy Processor), a custom 5nm AI inference chip delivering 1600 sparse TOPS for autonomous driving compute.",
       "highlights": [
-        "Increased design verification coverage to over 90% via a new, more efficient coverage generation flow",
+        "Developed system-level testcases for RAP1 (Rivian Autonomy Processor), a custom 5nm AI inference chip delivering 1600 sparse TOPS for autonomous driving compute",
+        "Increased toggle coverage to over 90% via a new, more efficient coverage generation flow",
         "Enhanced an existing integration test suite, reducing the failure rate from over 40% to less than 5%",
         "Developed a new system-level test to validate memory access, creating a baseline for future verification tests",
         "Authored new FuSa tests to validate error injection and interrupt mechanisms for critical components"
@@ -57,15 +58,15 @@
     },
     {
       "name": "Rivian Automotive",
-      "position": "Design Verification Intern, Special Project",
+      "position": "Design Verification Intern, RAP1 Silicon Team",
       "url": "https://rivian.com",
       "startDate": "2024-04-01",
       "endDate": "2024-08-01",
-      "summary": "Developed verification infrastructure and performance monitoring for automotive chip designs.",
+      "summary": "Developed verification infrastructure and performance monitoring for RAP1 automotive chip designs.",
       "highlights": [
         "Created performance monitor to track AXI transaction signals to test read and write operation performance",
         "Increased toggle coverage of chip blocks by creating and implementing new targeted tests",
-        "Conducted system level verification for the DUT using a custom UVM testbench",
+        "Conducted system-level verification for the DUT using a custom UVM testbench",
         "Developed and executed detailed test plans, identifying bugs and successfully debugging and resolving issues"
       ]
     },
@@ -161,11 +162,18 @@
   "certificates": [],
   "publications": [
     {
-      "name": "CXL Memory Device Characterization",
+      "name": "Transparent Memory Management for Large-Scale LLM Training and Tuning",
       "publisher": "In Progress",
-      "releaseDate": "2025-01-01",
+      "releaseDate": "2026-01-01",
       "url": "",
-      "summary": "Evaluated Samsung CMM-H CXL memory prototype using Intel MLC benchmarking tools and compared performance characteristics against internal lab CXL SSD implementations."
+      "summary": "Characterized memory bottlenecks in large-scale LLM training across multiple parallelism configurations. Developed transparent offloading mechanisms to alleviate network congestion in multi-GPU training. Advisor: Prof. Nam Sung Kim."
+    },
+    {
+      "name": "ReScue: Reliable and secure CXL memory",
+      "publisher": "IEEE International Symposium on High-Performance Computer Architecture (HPCA)",
+      "releaseDate": "2026-01-01",
+      "url": "",
+      "summary": "Co-authored paper on reliable and secure CXL memory with Chihun Song, Austin Antony Cruz, Michael Jaemin Kim, Minbok Wi, Kyungsan Kim, Sangyeol Lee, Jung Ho Ahn, and Nam Sung Kim. Presented at HPCA 2026."
     },
     {
       "name": "Exploiting Intel Advanced Matrix Extensions (AMX) for LLM Inference",

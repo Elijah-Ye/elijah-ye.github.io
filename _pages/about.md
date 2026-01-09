@@ -26,11 +26,11 @@ My name is Elijah Gaohan Ye. `Elijah` is my English first name, and `Gaohan` is 
 
 I am currently working as a Teaching Assistant for Digital Systems Laboratory (ECE 385), where I evaluate SystemVerilog/FPGA projects and conduct technical demonstrations of digital circuits and SoC designs.
 
-<h4 id="my_research"><code class="language-plaintext highlighter-rouge"> $cat my_research </code></h4>
+<h4 id="my_experience"><code class="language-plaintext highlighter-rouge"> $cat my_experience </code></h4>
 
-My research focuses on computer architecture, particularly hardware-software co-design for accelerating Large Language Models (LLMs). I have published work on "Exploiting Intel Advanced Matrix Extensions (AMX) for LLM Inference" in IEEE Computer Architecture Letters (CAL) 2024, which received the **IEEE Best Paper Award**. I'm also currently working on CXL memory device characterization research.
+I have industry experience at [Rivian Automotive](https://rivian.com) as a Design Verification Intern on the RAP1 Silicon Team, where I developed system-level testcases for RAP1 (Rivian Autonomy Processor), a custom 5nm AI inference chip delivering 1600 sparse TOPS for autonomous driving compute. I enhanced verification coverage, developed system-level tests, and worked with UVM testbenches.
 
-I have industry experience at [Rivian Automotive](https://rivian.com) as a Design Verification Intern, where I enhanced verification coverage, developed system-level tests, and worked with UVM testbenches for automotive chip designs.
+My research focuses on computer architecture, particularly hardware-software co-design for accelerating Large Language Models (LLMs). I have published work on "Exploiting Intel Advanced Matrix Extensions (AMX) for LLM Inference" in IEEE Computer Architecture Letters (CAL) 2024, which received the **IEEE Best Paper Award**. I'm currently working on transparent memory management for large-scale LLM training and tuning, and co-authored "ReScue: Reliable and secure CXL memory" published at HPCA 2026.
 
 <h4 id="my_skills"><code class="language-plaintext highlighter-rouge"> $cat my_skills </code></h4>
 
