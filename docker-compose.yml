@@ -3,8 +3,15 @@ version: "3"
 services:
   jekyll:
     image: amirpourmand/al-folio:latest
-    build: .
     ports:
       - 8080:8080
+      - 35729:35729
     volumes:
       - .:/srv/jekyll
+      - bundle_cache:/usr/local/bundle
+    environment:
+      - JEKYLL_ENV=development
+    command: bash -c "bundle install && /tmp/entry_point.sh"
+
+volumes:
+  bundle_cache:
