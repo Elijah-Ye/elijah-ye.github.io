@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I started my internship at [Rivian](https://rivian.com/) as a Special Project Intern! PTL!
+I started my internship at [Rivian](https://rivian.com/) as a Design Verification Intern on the RAP1 Silicon Team! PTL!

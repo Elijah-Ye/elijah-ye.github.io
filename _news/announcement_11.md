@@ -18,4 +18,4 @@ The RAP1 chip features:
 
 RAP1 will power the ACM3 and is expected to ship on R2 models starting at the end of 2026, bringing Rivian closer to their goal of delivering Level 4 autonomy.
 
-Read the full announcement [here](https://rivian.com/newsroom/article/rivian-announces-autonomy-ai-day).
+Read the full announcement [here](https://rivian.com/newsroom/article/rivian-unveils-custom-silicon-next-gen-autonomy-platform-deep-ai-integration).

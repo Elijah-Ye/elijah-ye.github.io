@@ -3,7 +3,7 @@ layout: page
 title: RISC-V Pipelined Processor
 description: 5-stage RISC-V Processor with some advance features
 img: assets/img/cpu.jpg
-importance: 1
+importance: 3
 category: work
 related_publications: 
 ---

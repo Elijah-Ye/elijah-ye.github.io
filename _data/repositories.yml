@@ -4,5 +4,6 @@ github_users:
 github_repos:
   - Elijah-Ye/RISC-V_Pipelined_Processor
   - Elijah-Ye/TCP_Protocol
+  - Elijah-Ye/Linux_Kernel
   - Elijah-Ye/Intro-To-Parallel-Programming-CUDA
   - Elijah-Ye/UIUC_Crime_Map

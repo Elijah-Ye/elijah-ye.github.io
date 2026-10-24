@@ -1,18 +1,18 @@
 {
   "basics": {
     "name": "Gaohan Ye",
-    "label": "Graduate Student in Electrical and Computer Engineering",
+    "label": "Hardware Engineer: DFT, Design Verification, and Computer Architecture",
     "image": "",
     "email": "elijah.gaohan.ye@gmail.com",
     "phone": "510-520-7207",
     "url": "https://elijah-ye.github.io",
-    "summary": "Graduate student at University of Illinois Urbana-Champaign with expertise in computer architecture, hardware design verification, and LLM acceleration. Published researcher with industry experience at Rivian Automotive.",
+    "summary": "M.S. in Electrical and Computer Engineering from the University of Illinois Urbana-Champaign, with industry experience in DFT at Astera Labs and design verification at Rivian Automotive. Published researcher in computer architecture and LLM acceleration (IEEE CAL Best Paper Award, HPCA 2026).",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Urbana",
+      "city": "Santa Clara",
       "countryCode": "US",
-      "region": "Illinois"
+      "region": "California"
     },
     "profiles": [
       {
@@ -28,6 +28,22 @@
     ]
   },
   "work": [
+    {
+      "name": "Astera Labs",
+      "position": "DFT Engineer Intern, Leo CXL Memory Controller",
+      "url": "https://www.asteralabs.com",
+      "startDate": "2026-06-01",
+      "endDate": "2026-10-01",
+      "summary": "Design-for-test engineering for the Leo CXL Memory Controller: memory BIST insertion, ATPG, boundary scan, and test-pattern automation.",
+      "highlights": [
+        "Inserted Synopsys STAR Memory System (SMS) BIST/repair into 3 blocks covering 186 SRAM macros in 9 vendor configurations",
+        "Debugged transition-delay (TDF) ATPG failures on I3C/I2C logic and wrote false-path constraints to close uncovered timing paths",
+        "Root-caused MBIST and boundary-scan gate-level simulation failures across DDR4 and DDR5 configurations",
+        "Built two Python toolchains (~4,000 lines) with byte-exact regression checks, automating die-to-package pin remapping of boundary-scan BSDL and ATE STIL patterns",
+        "Verified converted patterns end-to-end with Slurm-dispatched VCS gate-level simulation, debugging failures in Verdi",
+        "Generated block-level stuck-at ATPG patterns and ported them to a top-level testbench: 205 patterns, 0 mismatches"
+      ]
+    },
     {
       "name": "Rivian Automotive",
       "position": "Design Verification Intern, RAP1 Silicon Team",
@@ -48,7 +64,7 @@
       "position": "Teaching Assistant for Digital Systems Laboratory, ECE 385",
       "url": "https://illinois.edu",
       "startDate": "2025-01-01",
-      "endDate": "Present",
+      "endDate": "2026-05-01",
       "summary": "Teaching assistant for digital systems laboratory course covering FPGA and microprocessor implementations.",
       "highlights": [
         "Evaluated SystemVerilog/FPGA projects and microprocessor system implementations",
@@ -106,12 +122,13 @@
       "url": "https://illinois.edu",
       "area": "Electrical and Computer Engineering",
       "studyType": "Master of Science",
-      "startDate": "2024-01-01",
+      "startDate": "2024-08-01",
       "endDate": "2026-05-01",
-      "score": "3.83/4.00",
+      "score": "3.86/4.00",
       "courses": [
         "Computer Architecture",
         "SoC/Hardware Design",
+        "VLSI System Design",
         "Network Protocol",
         "Operating System"
       ]
@@ -163,10 +180,10 @@
   "publications": [
     {
       "name": "Transparent Memory Management for Large-Scale LLM Training and Tuning",
-      "publisher": "In Progress",
+      "publisher": "Under Review",
       "releaseDate": "2026-01-01",
       "url": "",
-      "summary": "Characterized memory bottlenecks in large-scale LLM training across multiple parallelism configurations. Developed transparent offloading mechanisms to alleviate network congestion in multi-GPU training. Advisor: Prof. Nam Sung Kim."
+      "summary": "Characterized LLM training memory-access patterns, revealing strong spatial and cross-iteration temporal locality in large tensor accesses. These findings motivated transparent UVM-based CPU-memory offloading with a coalescing prefetcher to relieve network bottlenecks in distributed training. Advisor: Prof. Nam Sung Kim."
     },
     {
       "name": "ReScue: Reliable and secure CXL memory",
@@ -179,8 +196,8 @@
       "name": "Exploiting Intel Advanced Matrix Extensions (AMX) for LLM Inference",
       "publisher": "IEEE Computer Architecture Letters (CAL)",
       "releaseDate": "2024-01-01",
-      "url": "",
-      "summary": "Contributed to research on Intel Extension for PyTorch utilizing Intel Sapphire Rapids CPU with AMX. Developed CPU-GPU heterogeneous computing techniques to accelerate Large Language Model inference. Collaborated with Prof. Nam Sung Kim's research group to advance computational efficiency and speed. Received IEEE Best Paper Award."
+      "url": "https://doi.org/10.1109/LCA.2024.3397747",
+      "summary": "Characterized Intel AMX GEMM/GEMV throughput on a dual-socket Sapphire Rapids server across OPT-125M to OPT-175B matrix shapes, establishing the CPU performance profile behind an arithmetic-intensity-based CPU-GPU partitioning policy. The system achieved 12.1x lower latency and 2.2x higher throughput than GPU-only OPT-30B inference. Advisor: Prof. Nam Sung Kim. Received IEEE Best Paper Award."
     }
   ],
   "skills": [
@@ -193,6 +210,8 @@
         "C/C++ (Advanced)",
         "UVM/OVM",
         "Python",
+        "Tcl",
+        "Bash",
         "CUDA",
         "Assembly (x86, RISC-V)"
       ]
@@ -212,15 +231,42 @@
       ]
     },
     {
+      "name": "DFT",
+      "level": "Advanced",
+      "icon": "fa-solid fa-vials",
+      "keywords": [
+        "ATPG Pattern Validation",
+        "Boundary Scan (JTAG/BSDL)",
+        "MBIST",
+        "STIL Patterns",
+        "Gate-Level Simulation",
+        "Die-to-Package Test Collateral"
+      ]
+    },
+    {
       "name": "Hardware Verification",
       "level": "Advanced",
       "icon": "fa-solid fa-check-circle",
       "keywords": [
         "Design Verification",
         "UVM/OVM",
-        "Functional Coverage",
+        "Functional & Toggle Coverage",
+        "SystemVerilog Assertions",
+        "Test Plans",
         "System-Level Testing",
-        "FuSa Testing"
+        "FuSa/Error Injection"
+      ]
+    },
+    {
+      "name": "Physical Design",
+      "level": "Intermediate",
+      "icon": "fa-solid fa-layer-group",
+      "keywords": [
+        "Custom CMOS Layout",
+        "Standard Cell Design",
+        "Transistor Sizing",
+        "Floorplanning",
+        "DRC/LVS Verification"
       ]
     },
     {
@@ -228,12 +274,17 @@
       "level": "Intermediate",
       "icon": "fa-solid fa-tools",
       "keywords": [
+        "Cadence Virtuoso",
+        "Innovus",
+        "Calibre (DRC/LVS)",
+        "Synopsys TestMAX ATPG",
         "Verdi",
         "VCS",
+        "Design Compiler",
         "Git",
         "Linux",
+        "Slurm",
         "Intel Extension for PyTorch",
-        "Performance Analysis",
         "Intel MLC"
       ]
     }
@@ -271,6 +322,31 @@
   ],
   "references": [],
   "projects": [
+    {
+      "name": "VLSI Physical Design",
+      "summary": "Took a custom datapath from transistor-level cells to routed layout in FreePDK45 using Cadence Virtuoso, Innovus, and Synopsys Design Compiler (ECE course).",
+      "highlights": [
+        "Built an area-optimized custom CMOS standard cell library, verified via DRC, LVS, and digital simulation",
+        "Designed schematic and physical layout of a bit-sliced datapath with a custom ALU and register file",
+        "Optimized CMOS transistor sizing to balance strict area constraints with worst-case pull-up/pull-down drive strength",
+        "Ran Design Compiler synthesis and Innovus place-and-route, taking RTL to routed layout"
+      ],
+      "startDate": "2026-01-01",
+      "endDate": "2026-05-01",
+      "url": ""
+    },
+    {
+      "name": "NPU-CPU LLM Inference",
+      "summary": "Led an ECE 527 project modeling Llama 3.1 8B inference split across a Furiosa RNGD NPU and an Intel AMX CPU.",
+      "highlights": [
+        "Designed an analytical performance model partitioning inference by arithmetic intensity and batch size, predicting end-to-end latency from measured component latencies",
+        "Derived three batch-size-adaptive policies; hybrid NPU prefill + CPU decode showed 12% average latency overhead vs. H100 at 2.6x lower system power",
+        "Projected 23-40% lower three-year total cost of ownership than H100-based systems"
+      ],
+      "startDate": "2025-08-01",
+      "endDate": "2025-12-01",
+      "url": ""
+    },
     {
       "name": "Multi-stage RISC-V Processor",
       "summary": "Designed and implemented RV32I processor in SystemVerilog with data & branch hazard detection as team project.",
