@@ -1,11 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://elijah-ye.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://elijah-ye.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2026-01-09T16:47:53+00:00</updated><id>https://elijah-ye.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">Web Development with Python Tutorial</title><link href="https://elijah-ye.github.io/blog/2024/WebDevWithPython/" rel="alternate" type="text/html" title="Web Development with Python Tutorial"/><published>2024-01-17T12:00:00+00:00</published><updated>2024-01-17T12:00:00+00:00</updated><id>https://elijah-ye.github.io/blog/2024/WebDevWithPython</id><content type="html" xml:base="https://elijah-ye.github.io/blog/2024/WebDevWithPython/"><![CDATA[<h1 id="objective">Objective</h1> <ul> <li>Create a “Jovian Careers” website listing job openings at Jovian</li> <li>Use a modern HTML &amp; CSS framework <code class="language-plaintext highlighter-rouge">Bootstrap</code> for layout and styling</li> <li>Deploy the website to the cloud via <code class="language-plaintext highlighter-rouge">Render.com</code> and attach a custom domain is a <code class="language-plaintext highlighter-rouge">TODO</code></li> </ul> <p><br/></p> <h1 id="step-1---project-setup--flask-basic">Step 1 - Project Setup &amp; Flask Basic</h1> <ul> <li>Create a project on GitHub</li> <li>Open up the project on <a href="https://replit.com">Replit</a></li> <li>Create and run a Flask web server</li> <li>Push changes back to GitHub</li> </ul> <blockquote> <p>I will have a sub heading for things I feel like I need to do some documentation</p> </blockquote> <h2 id="create-a-project-on-github">Create a project on GitHub</h2> <p>Something cool and useful I learned is that you can add a <code class="language-plaintext highlighter-rouge">.gitignore</code> template while you are creating the project. Since this project is mostly in Python, you can choose the <code class="language-plaintext highlighter-rouge">.gitignore</code> template of Python. This can come very handy when you just want to use the cmd <code class="language-plaintext highlighter-rouge">$ git add .</code> and not worrying files you don’t want to push by accident.</p> <h2 id="create-and-run-a-flask-web-server">Create and run a Flask web server</h2> <h3 id="installation">Installation</h3> <p><code class="language-plaintext highlighter-rouge">$ pip install Flask</code></p> <h3 id="creating-a-simple-flask-application">Creating a Simple Flask Application</h3> <p>First, create a <code class="language-plaintext highlighter-rouge">app.py</code> file in the project directory. A simple code template for Flask project would look like this:</p> <pre><code class="language-Python">from flask import Flask
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://elijah-ye.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://elijah-ye.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-10-24T21:52:27+00:00</updated><id>https://elijah-ye.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+</subtitle><entry><title type="html">Web Development with Python Tutorial</title><link href="https://elijah-ye.github.io/blog/2024/WebDevWithPython/" rel="alternate" type="text/html" title="Web Development with Python Tutorial" /><published>2024-01-17T12:00:00+00:00</published><updated>2024-01-17T12:00:00+00:00</updated><id>https://elijah-ye.github.io/blog/2024/WebDevWithPython</id><content type="html" xml:base="https://elijah-ye.github.io/blog/2024/WebDevWithPython/"><![CDATA[<h1 id="objective">Objective</h1>
+<ul>
+  <li>Create a “Jovian Careers” website listing job openings at Jovian</li>
+  <li>Use a modern HTML &amp; CSS framework <code class="language-plaintext highlighter-rouge">Bootstrap</code> for layout and styling</li>
+  <li>Deploy the website to the cloud via <code class="language-plaintext highlighter-rouge">Render.com</code> and attach a custom domain is a <code class="language-plaintext highlighter-rouge">TODO</code></li>
+</ul>
+
+<p><br /></p>
+
+<h1 id="step-1---project-setup--flask-basic">Step 1 - Project Setup &amp; Flask Basic</h1>
+<ul>
+  <li>Create a project on GitHub</li>
+  <li>Open up the project on <a href="https://replit.com">Replit</a></li>
+  <li>Create and run a Flask web server</li>
+  <li>Push changes back to GitHub</li>
+</ul>
+
+<blockquote>
+  <p>I will have a sub heading for things I feel like I need to do some documentation</p>
+</blockquote>
+
+<h2 id="create-a-project-on-github">Create a project on GitHub</h2>
+<p>Something cool and useful I learned is that you can add a <code class="language-plaintext highlighter-rouge">.gitignore</code> template while you are creating the project. Since this project is mostly in Python, you can choose the <code class="language-plaintext highlighter-rouge">.gitignore</code> template of Python. This can come very handy when you just want to use the cmd <code class="language-plaintext highlighter-rouge">$ git add .</code> and not worrying files you don’t want to push by accident.</p>
+
+<h2 id="create-and-run-a-flask-web-server">Create and run a Flask web server</h2>
+<h3 id="installation">Installation</h3>
+<p><code class="language-plaintext highlighter-rouge">$ pip install Flask</code></p>
+<h3 id="creating-a-simple-flask-application">Creating a Simple Flask Application</h3>
+<p>First, create a <code class="language-plaintext highlighter-rouge">app.py</code> file in the project directory. A simple code template for Flask project would look like this:</p>
+<pre><code class="language-Python">from flask import Flask
 
 app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
     return "&lt;p&gt;Hello, World!&lt;/p&gt;"
-</code></pre> <p>Then, you can run the project by running <code class="language-plaintext highlighter-rouge">$ python app.py</code></p> <h1 id="step-2---web-pages-with-html--css">Step 2 - Web Pages with HTML &amp; CSS</h1> <ul> <li>Render templates and use static assets</li> <li>Create the layout of the page using HTML tags</li> <li>Style the page using CSS classes, properties, and values</li> <li>Use the <code class="language-plaintext highlighter-rouge">Bootstrap</code> framework for faster development</li> </ul> <h2 id="render-templates-and-use-static-assets">Render templates and use static assets</h2> <p>First, create a folder called <code class="language-plaintext highlighter-rouge">templates</code>.</p> <p>Then, Within our templates folder, we initialize our html file - <code class="language-plaintext highlighter-rouge">home.html</code> which contains the information and layout of what we want to show on our route page.</p> <p>If you are not so familiar with html, check out this <a href="https://htmldog.com/">html tutorial</a>.</p> <p>Once you have done all of the above, you can change the <code class="language-plaintext highlighter-rouge">app.py</code> to:</p> <pre><code class="language-Python">from flask import Flask, render_template
+</code></pre>
+
+<p>Then, you can run the project by running <code class="language-plaintext highlighter-rouge">$ python app.py</code></p>
+
+<h1 id="step-2---web-pages-with-html--css">Step 2 - Web Pages with HTML &amp; CSS</h1>
+<ul>
+  <li>Render templates and use static assets</li>
+  <li>Create the layout of the page using HTML tags</li>
+  <li>Style the page using CSS classes, properties, and values</li>
+  <li>Use the <code class="language-plaintext highlighter-rouge">Bootstrap</code> framework for faster development</li>
+</ul>
+
+<h2 id="render-templates-and-use-static-assets">Render templates and use static assets</h2>
+<p>First, create a folder called <code class="language-plaintext highlighter-rouge">templates</code>.</p>
+
+<p>Then, Within our templates folder, we initialize our html file - <code class="language-plaintext highlighter-rouge">home.html</code> which contains the information and layout of what we want to show on our route page.</p>
+
+<p>If you are not so familiar with html, check out this <a href="https://htmldog.com/">html tutorial</a>.</p>
+
+<p>Once you have done all of the above, you can change the <code class="language-plaintext highlighter-rouge">app.py</code> to:</p>
+<pre><code class="language-Python">from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -15,10 +65,76 @@ def hello_world():
 
 if __name__ = '__main__'
   app.run(host='0.0.0.0', debug=True)
-</code></pre> <h3 id="use-the-bootstrap-framework-for-faster-development">Use the <code class="language-plaintext highlighter-rouge">Bootstrap</code> framework for faster development</h3> <p>Now before we start any real development on the html page, you should grab pen and paper to just draw the general layout of the page(s) instead of just start coding. This will serve as a general guideline for you to build you website.</p> <div class="row mt-3"> <div class="col-sm mt-3 mt-md-0"> <figure> <picture> <img src="/assets/img/web_drawing.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </div> </div> <h2 id="using-bootstrap-for-faster-development">Using Bootstrap for faster Development</h2> <p>Instead of typing whole CSS manually for every website, you can use a pre existing set of styles that have been created by some good designers.</p> <p>You can head to Bootstrap’s quickstart guide: https://getbootstrap.com/docs/5.2/getting-started/introduction/, and follow the steps below to add some extra tags within the <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> tag to ensure the proper working of bootstrap:</p> <ul> <li>Add the follwing meta tags:</li> </ul> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;meta charset="utf-8"&gt;
+</code></pre>
+
+<h3 id="use-the-bootstrap-framework-for-faster-development">Use the <code class="language-plaintext highlighter-rouge">Bootstrap</code> framework for faster development</h3>
+<p>Now before we start any real development on the html page, you should grab pen and paper to just draw the general layout of the page(s) instead of just start coding. This will serve as a general guideline for you to build you website.</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/web_drawing.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+
+<h2 id="using-bootstrap-for-faster-development">Using Bootstrap for faster Development</h2>
+
+<p>Instead of typing whole CSS manually for every website, you can use a pre existing set of styles that have been created by some good designers.</p>
+
+<p>You can head to Bootstrap’s quickstart guide: https://getbootstrap.com/docs/5.2/getting-started/introduction/, 
+and follow the steps below to add some extra tags within the <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> tag to ensure the proper working of bootstrap:</p>
+
+<ul>
+  <li>Add the follwing meta tags:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;meta charset="utf-8"&gt;
 &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-</code></pre></div></div> <ul> <li>For CSS add a link tag:</li> </ul> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"&gt;
-</code></pre></div></div> <p>This contains some pre-existing styles that immediately get applied to our page. You can reload and see the changes straight away. So now, all we need to do is add appropriate classes to style our website according to preexisting styles by bootstrap developers.</p> <p>Let’s look at a few classes we will add to make our website look more presentable and ready.</p> <ul> <li> <p>For Centre Aligning your text: <code class="language-plaintext highlighter-rouge">class = "text-center"</code></p> </li> <li>Margin Top: <code class="language-plaintext highlighter-rouge">mt-margin_size</code></li> <li>Margin Bottom: <code class="language-plaintext highlighter-rouge">mb-margin_size</code></li> </ul> <p>For any feature you want, you can always look up into the bootstrap documentation. A quick search for any thing is to do <code class="language-plaintext highlighter-rouge">cmd</code> + <code class="language-plaintext highlighter-rouge">k</code> in <code class="language-plaintext highlighter-rouge">Bootstrap</code> documentation.</p> <h1 id="step-3---dynamic-data--cloud-deployment">Step 3 - Dynamic Data &amp; Cloud Deployment</h1> <ul> <li>Render dynamic data using Jinja template tags</li> <li>Add an API route to return JSON</li> <li>Deploy the project to Render.com</li> <li>Connect a domain with Render deployment</li> </ul> <h2 id="render-dynamic-data-using-jinja-template-tags">Render Dynamic Data using Jinja template tags</h2> <p>We will create a dictionary of jobs that mimic things that would be returned from a database.</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">render_template</span><span class="p">,</span> <span class="n">jsonify</span>
+</code></pre></div></div>
+
+<ul>
+  <li>For CSS add a link tag:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"&gt;
+</code></pre></div></div>
+
+<p>This contains some pre-existing styles that immediately get applied to our page. You can reload and see the changes straight away.  So now, all we need to do is add appropriate classes to style our website according to preexisting styles by bootstrap developers.</p>
+
+<p>Let’s look at a few classes we will add to make our website look more presentable and ready.</p>
+
+<ul>
+  <li>
+    <p>For Centre Aligning your text: <code class="language-plaintext highlighter-rouge">class = "text-center"</code></p>
+  </li>
+  <li>Margin Top: <code class="language-plaintext highlighter-rouge">mt-margin_size</code></li>
+  <li>Margin Bottom: <code class="language-plaintext highlighter-rouge">mb-margin_size</code></li>
+</ul>
+
+<p>For any feature you want, you can always look up into the bootstrap documentation. A quick search for any thing is to do <code class="language-plaintext highlighter-rouge">cmd</code> + <code class="language-plaintext highlighter-rouge">k</code> in <code class="language-plaintext highlighter-rouge">Bootstrap</code> documentation.</p>
+
+<h1 id="step-3---dynamic-data--cloud-deployment">Step 3 - Dynamic Data &amp; Cloud Deployment</h1>
+
+<ul>
+  <li>Render dynamic data using Jinja template tags</li>
+  <li>Add an API route to return JSON</li>
+  <li>Deploy the project to Render.com</li>
+  <li>Connect a domain with Render deployment</li>
+</ul>
+
+<h2 id="render-dynamic-data-using-jinja-template-tags">Render Dynamic Data using Jinja template tags</h2>
+<p>We will create a dictionary of jobs that mimic things that would be returned from a database.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">render_template</span><span class="p">,</span> <span class="n">jsonify</span>
 
 <span class="n">app</span> <span class="o">=</span> <span class="nc">Flask</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>
 
@@ -47,16 +163,26 @@ if __name__ = '__main__'
     <span class="sh">'</span><span class="s">salary</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">$150,000</span><span class="sh">'</span>
   <span class="p">}</span>
 <span class="p">]</span>
-</code></pre></div></div> <h3 id="templates">templates</h3> <p>We will add an argument in <code class="language-plaintext highlighter-rouge">render_template</code> as <code class="language-plaintext highlighter-rouge">jobs</code></p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@app.route</span><span class="p">(</span><span class="sh">"</span><span class="s">/</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="templates">templates</h3>
+<p>We will add an argument in <code class="language-plaintext highlighter-rouge">render_template</code> as <code class="language-plaintext highlighter-rouge">jobs</code></p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@app.route</span><span class="p">(</span><span class="sh">"</span><span class="s">/</span><span class="sh">"</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
   <span class="k">return</span> <span class="nf">render_template</span><span class="p">(</span><span class="sh">'</span><span class="s">home.html</span><span class="sh">'</span><span class="p">,</span> 
                         <span class="n">jobs</span><span class="o">=</span><span class="n">JOBS</span><span class="p">)</span>
-</code></pre></div></div> <p>Then inside <code class="language-plaintext highlighter-rouge">home.html</code>, if you do ``, you will see that the dictionary was displayed as strings in your page.</p> <p>You can also use these following code to render it nicely:</p> <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+<p>Then inside <code class="language-plaintext highlighter-rouge">home.html</code>, if you do ``, you will see that the dictionary was displayed as strings in your page.</p>
+
+<p>You can also use these following code to render it nicely:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
   {% for job in jobs %}
     {% include 'jobItems.html' %}
   {% endfor %}
 
-</code></pre></div></div> <p>Then inside the <code class="language-plaintext highlighter-rouge">jobItems.html</code>:</p> <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+<p>Then inside the <code class="language-plaintext highlighter-rouge">jobItems.html</code>:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-4 border-bottom pb-3 row"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-10"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;h4&gt;</span>{{job['title']}}<span class="nt">&lt;/h4&gt;</span>
@@ -70,16 +196,168 @@ if __name__ = '__main__'
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
-</code></pre></div></div> <h2 id="adding-api-route-to-return-json">Adding API Route to Return JSON</h2> <p>First we willl need to add the function <code class="language-plaintext highlighter-rouge">jsonify</code>, just include the library. Then add:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@app.route</span><span class="p">(</span><span class="sh">"</span><span class="s">/api/jobs</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="adding-api-route-to-return-json">Adding API Route to Return JSON</h2>
+<p>First we willl need to add the function <code class="language-plaintext highlighter-rouge">jsonify</code>, just include the library. Then add:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@app.route</span><span class="p">(</span><span class="sh">"</span><span class="s">/api/jobs</span><span class="sh">"</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">list_jobs</span><span class="p">():</span>
   <span class="k">return</span> <span class="nf">jsonify</span><span class="p">(</span><span class="n">JOBS</span><span class="p">)</span>
-</code></pre></div></div> <p>Once you did that, at the home url, you could do <code class="language-plaintext highlighter-rouge">/api/jobs</code>, and you will see the dictionary to be returned.</p>]]></content><author><name></name></author><category term="personal"/><category term="posts"/><category term="notes"/><summary type="html"><![CDATA[my personal notes from the YouTube "Web Dev with Python" by freeCodeCamp.org]]></summary></entry><entry><title type="html">a crash course notes on foundations framework</title><link href="https://elijah-ye.github.io/blog/2024/foundations-notes/" rel="alternate" type="text/html" title="a crash course notes on foundations framework"/><published>2024-01-11T12:00:00+00:00</published><updated>2024-01-11T12:00:00+00:00</updated><id>https://elijah-ye.github.io/blog/2024/foundations-notes</id><content type="html" xml:base="https://elijah-ye.github.io/blog/2024/foundations-notes/"><![CDATA[<h2 id="overview-of-foundation-framework">Overview of Foundation Framework</h2> <h3 id="what-is-foundation-framework">What is Foundation Framework</h3> <ol> <li>Advanced responsive front-end framework</li> <li>Mobile first design</li> </ol> <h3 id="why-foundation-framework">Why Foundation Framework</h3> <ol> <li>Faster UI/UX Development</li> <li>Smarter Code</li> <li>Responsiveness</li> <li>Consistency and Convenience</li> <li>More customizable than Bootstrap</li> </ol> <h3 id="foundation-vs-bootstrap">Foundation vs. Bootstrap</h3> <ol> <li>Neither is “Better”, it’s all preference</li> <li>Bootstrap is more popular (more support &amp; resources)</li> <li>Bootstrap has an easier syntax in some areas</li> <li>Foundation has more for advanced programmers</li> <li>Bootstrap is quicker, Foundation is more customizable</li> </ol> <h2 id="installing-foundation">Installing Foundation</h2> <p>Foundation CLI (Command-line Interface) : Install with NPM or Gem</p> <h2 id="foundation-cheatsheet">Foundation Cheatsheet</h2> <p>You can find a copy of Foundation Cheatsheet at this <a href="https://elijah-ye.github.io/Foundation_Cheatsheet/">link</a>, and the source code is available <a href="https://github.com/Elijah-Ye/Foundation_Cheatsheet">here</a>.</p> <p>Thanks for reading!</p>]]></content><author><name></name></author><category term="personal"/><category term="posts"/><category term="notes"/><summary type="html"><![CDATA[my personal notes from the YouTube "Foundation Framework Crash Course"]]></summary></entry><entry><title type="html">a collection of notes on Rust language</title><link href="https://elijah-ye.github.io/blog/2024/rust-notes/" rel="alternate" type="text/html" title="a collection of notes on Rust language"/><published>2024-01-03T19:30:00+00:00</published><updated>2024-01-03T19:30:00+00:00</updated><id>https://elijah-ye.github.io/blog/2024/rust-notes</id><content type="html" xml:base="https://elijah-ye.github.io/blog/2024/rust-notes/"><![CDATA[<h2 id="chapter-1-introducing-rust">Chapter 1 Introducing Rust</h2> <h3 id="hello-world-for-rust">hello world for Rust</h3> <div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</code></pre></div></div>
+<p>Once you did that, at the home url, you could do <code class="language-plaintext highlighter-rouge">/api/jobs</code>, and you will see the dictionary to be returned.</p>]]></content><author><name></name></author><category term="personal" /><category term="posts" /><category term="notes" /><summary type="html"><![CDATA[my personal notes from the YouTube "Web Dev with Python" by freeCodeCamp.org]]></summary></entry><entry><title type="html">a crash course notes on foundations framework</title><link href="https://elijah-ye.github.io/blog/2024/foundations-notes/" rel="alternate" type="text/html" title="a crash course notes on foundations framework" /><published>2024-01-11T12:00:00+00:00</published><updated>2024-01-11T12:00:00+00:00</updated><id>https://elijah-ye.github.io/blog/2024/foundations-notes</id><content type="html" xml:base="https://elijah-ye.github.io/blog/2024/foundations-notes/"><![CDATA[<h2 id="overview-of-foundation-framework">Overview of Foundation Framework</h2>
+<h3 id="what-is-foundation-framework">What is Foundation Framework</h3>
+<ol>
+  <li>Advanced responsive front-end framework</li>
+  <li>Mobile first design</li>
+</ol>
+
+<h3 id="why-foundation-framework">Why Foundation Framework</h3>
+<ol>
+  <li>Faster UI/UX Development</li>
+  <li>Smarter Code</li>
+  <li>Responsiveness</li>
+  <li>Consistency and Convenience</li>
+  <li>More customizable than Bootstrap</li>
+</ol>
+
+<h3 id="foundation-vs-bootstrap">Foundation vs. Bootstrap</h3>
+<ol>
+  <li>Neither is “Better”, it’s all preference</li>
+  <li>Bootstrap is more popular (more support &amp; resources)</li>
+  <li>Bootstrap has an easier syntax in some areas</li>
+  <li>Foundation has more for advanced programmers</li>
+  <li>Bootstrap is quicker, Foundation is more customizable</li>
+</ol>
+
+<h2 id="installing-foundation">Installing Foundation</h2>
+
+<p>Foundation CLI (Command-line Interface) : Install with NPM or Gem</p>
+
+<h2 id="foundation-cheatsheet">Foundation Cheatsheet</h2>
+
+<p>You can find a copy of Foundation Cheatsheet at this <a href="https://elijah-ye.github.io/Foundation_Cheatsheet/">link</a>, and the source code is available <a href="https://github.com/Elijah-Ye/Foundation_Cheatsheet">here</a>.</p>
+
+<p>Thanks for reading!</p>]]></content><author><name></name></author><category term="personal" /><category term="posts" /><category term="notes" /><summary type="html"><![CDATA[my personal notes from the YouTube "Foundation Framework Crash Course"]]></summary></entry><entry><title type="html">a collection of notes on Rust language</title><link href="https://elijah-ye.github.io/blog/2024/rust-notes/" rel="alternate" type="text/html" title="a collection of notes on Rust language" /><published>2024-01-03T19:30:00+00:00</published><updated>2024-01-03T19:30:00+00:00</updated><id>https://elijah-ye.github.io/blog/2024/rust-notes</id><content type="html" xml:base="https://elijah-ye.github.io/blog/2024/rust-notes/"><![CDATA[<h2 id="chapter-1-introducing-rust">Chapter 1 Introducing Rust</h2>
+
+<h3 id="hello-world-for-rust">hello world for Rust</h3>
+
+<div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
   <span class="nd">println!</span><span class="p">(</span><span class="s">"Hello,world!"</span><span class="p">);</span>
 <span class="p">}</span>
-</code></pre></div></div> <p>That’s what Rust’s hello world looks like.</p> <p>Rust <code class="language-plaintext highlighter-rouge">cargo</code> tools -&gt; download and compile dependencies</p> <p><code class="language-plaintext highlighter-rouge">.rs</code> is Rust</p> <p>In Ruby, <code class="language-plaintext highlighter-rouge">!</code> is used to signal a destructive operation, meaning alter the original contents.</p> <p>In Rust, <code class="language-plaintext highlighter-rouge">!</code> is used to signal the use of a “macro” (like functions).</p> <p>Rust is an <code class="language-plaintext highlighter-rouge">expression-based language</code></p> <div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">let</span> <span class="n">varName</span><span class="p">:</span> <span class="k">type</span> <span class="o">=</span> <span class="o">...</span><span class="p">;</span>
-</code></pre></div></div> <p>In Rust, <code class="language-plaintext highlighter-rouge">let</code> allows Rust to infer the type of elements, like <code class="language-plaintext highlighter-rouge">auto</code> in c/c++.</p> <p><code class="language-plaintext highlighter-rouge">if let</code> conditionally processing data.</p> <h3 id="initial-introduction-to-cargo">Initial introduction to Cargo</h3> <p><code class="language-plaintext highlighter-rouge">cargo</code> is a front=end for rustc -&gt; rust compiler</p> <p><code class="language-plaintext highlighter-rouge">$ cargo new</code> creates a new directory</p> <p><code class="language-plaintext highlighter-rouge">$ cargo init</code> create within the directory</p> <p><code class="language-plaintext highlighter-rouge">$ cargo build</code> downloads dependencies and compiles the code</p> <p><code class="language-plaintext highlighter-rouge">$ cargo run</code> runs <code class="language-plaintext highlighter-rouge">cargo build</code> then runs the executable files</p> <p><code class="language-plaintext highlighter-rouge">$ cargo run --release</code> skips conditional compile</p> <p><code class="language-plaintext highlighter-rouge">$ cargo run -q --release</code>: <code class="language-plaintext highlighter-rouge">-q</code> stands for quiet, it will further reduce the output code.</p> <p><code class="language-plaintext highlighter-rouge">$ cargo doc</code> builds a html documentation for the project</p> <h3 id="summarize-intro-to-rust">Summarize intro to Rust</h3> <p>Rust is high control + high safety.</p> <p>  Python -&gt; high safety + low control</p> <p>  C/C++ -&gt; high control + low safety</p> <p>Rust is labelled as a <code class="language-plaintext highlighter-rouge">system programming language</code></p> <p><code class="language-plaintext highlighter-rouge">()</code> is pronounced unit -&gt; when no other meaningful return value, expression return <code class="language-plaintext highlighter-rouge">()</code> -&gt; unit.</p> <p>Rust uses arrays to hold data by default, so it is “cache friendly”.</p> <p><strong>Downside of Rust:</strong></p> <ul> <li>Cyclic data structure. i.e. doubly linked-list</li> <li>Compile time is longer for Rust</li> </ul> <p><strong>Where Rust used the most ?</strong></p> <ul> <li>Commandline Untilitize</li> <li>Data processing -&gt; fastest Regular Expression Engine</li> </ul> <p><strong>3 Main commandline tools for Rust</strong></p> <ol> <li>cargo</li> <li>rustup (rust install)</li> <li>rustc</li> </ol> <h2 id="chapter-2-language-fundations">Chapter 2 Language Fundations</h2> <ol> <li>Using <code class="language-plaintext highlighter-rouge">rustc</code> to compile</li> <li><code class="language-plaintext highlighter-rouge">cargo</code> &gt; <code class="language-plaintext highlighter-rouge">rustc</code>, since <code class="language-plaintext highlighter-rouge">cargo</code> helps you to figure out dependencies as well</li> </ol> <p>Code blocks also known as lexical scopes.</p> <p>Variable bindings: bind variable name and its value together</p> <p>Variables are immutable by default, but you can use <code class="language-plaintext highlighter-rouge">mut</code> keyword to change that.</p> <div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">let</span> <span class="n">varName</span><span class="p">:</span> <span class="k">type</span> <span class="o">=</span> <span class="o">...</span><span class="p">;</span>
-</code></pre></div></div> <div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">fn</span> <span class="nf">add</span><span class="p">(</span><span class="o">...</span><span class="p">)</span> <span class="k">-&gt;</span> <span class="nb">i32</span> <span class="p">{}</span> <span class="c1">//i32 is the return type in this context</span>
-</code></pre></div></div> <p>Rust also has <code class="language-plaintext highlighter-rouge">Operator Overload</code> like C/C++</p> <p>Numbers have methods. Rust uses <code class="language-plaintext highlighter-rouge">24.5_f32.round()</code> rather than <code class="language-plaintext highlighter-rouge">round(24.5_f32)</code></p> <p><code class="language-plaintext highlighter-rouge">_</code> means nothing in numbers. It is good for enhancing readability.</p> <div class="row mt-3"> <div class="col-sm mt-3 mt-md-0"> <figure> <picture> <img src="/assets/img/rust_number_types.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </div> </div> <h3 id="compare-between-types">Compare between types</h3> <div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</code></pre></div></div>
+<p>That’s what Rust’s hello world looks like.</p>
+
+<p>Rust <code class="language-plaintext highlighter-rouge">cargo</code> tools -&gt; download and compile dependencies</p>
+
+<p><code class="language-plaintext highlighter-rouge">.rs</code> is Rust</p>
+
+<p>In Ruby, <code class="language-plaintext highlighter-rouge">!</code> is used to signal a destructive operation, meaning alter the original contents.</p>
+
+<p>In Rust, <code class="language-plaintext highlighter-rouge">!</code> is used to signal the use of a “macro” (like functions).</p>
+
+<p>Rust is an <code class="language-plaintext highlighter-rouge">expression-based language</code></p>
+
+<div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">let</span> <span class="n">varName</span><span class="p">:</span> <span class="k">type</span> <span class="o">=</span> <span class="o">...</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>In Rust, <code class="language-plaintext highlighter-rouge">let</code> allows Rust to infer the type of elements, like <code class="language-plaintext highlighter-rouge">auto</code> in c/c++.</p>
+
+<p><code class="language-plaintext highlighter-rouge">if let</code> conditionally processing data.</p>
+
+<h3 id="initial-introduction-to-cargo">Initial introduction to Cargo</h3>
+
+<p><code class="language-plaintext highlighter-rouge">cargo</code> is a front=end for rustc -&gt; rust compiler</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ cargo new</code> creates a new directory</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ cargo init</code> create within the directory</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ cargo build</code> downloads dependencies and compiles the code</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ cargo run</code> runs <code class="language-plaintext highlighter-rouge">cargo build</code> then runs the executable files</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ cargo run --release</code> skips conditional compile</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ cargo run -q --release</code>: <code class="language-plaintext highlighter-rouge">-q</code> stands for quiet, it will further reduce the output code.</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ cargo doc</code> builds a html documentation for the project</p>
+
+<h3 id="summarize-intro-to-rust">Summarize intro to Rust</h3>
+
+<p>Rust is high control + high safety.</p>
+
+<p>  Python -&gt; high safety + low control</p>
+
+<p>  C/C++ -&gt; high control + low safety</p>
+
+<p>Rust is labelled as a <code class="language-plaintext highlighter-rouge">system programming language</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">()</code> is pronounced unit -&gt; when no other meaningful return value, expression return <code class="language-plaintext highlighter-rouge">()</code> -&gt; unit.</p>
+
+<p>Rust uses arrays to hold data by default, so it is “cache friendly”.</p>
+
+<p><strong>Downside of Rust:</strong></p>
+<ul>
+  <li>Cyclic data structure. i.e. doubly linked-list</li>
+  <li>Compile time is longer for Rust</li>
+</ul>
+
+<p><strong>Where Rust used the most ?</strong></p>
+<ul>
+  <li>Commandline Untilitize</li>
+  <li>Data processing -&gt; fastest Regular Expression Engine</li>
+</ul>
+
+<p><strong>3 Main commandline tools for Rust</strong></p>
+<ol>
+  <li>cargo</li>
+  <li>rustup (rust install)</li>
+  <li>rustc</li>
+</ol>
+
+<h2 id="chapter-2-language-fundations">Chapter 2 Language Fundations</h2>
+
+<ol>
+  <li>Using <code class="language-plaintext highlighter-rouge">rustc</code> to compile</li>
+  <li><code class="language-plaintext highlighter-rouge">cargo</code> &gt; <code class="language-plaintext highlighter-rouge">rustc</code>, since <code class="language-plaintext highlighter-rouge">cargo</code> helps you to figure out dependencies as well</li>
+</ol>
+
+<p>Code blocks also known as lexical scopes.</p>
+
+<p>Variable bindings: bind variable name and its value together</p>
+
+<p>Variables are immutable by default, but you can use <code class="language-plaintext highlighter-rouge">mut</code> keyword to change that.</p>
+
+<div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">let</span> <span class="n">varName</span><span class="p">:</span> <span class="k">type</span> <span class="o">=</span> <span class="o">...</span><span class="p">;</span>
+</code></pre></div></div>
+
+<div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">fn</span> <span class="nf">add</span><span class="p">(</span><span class="o">...</span><span class="p">)</span> <span class="k">-&gt;</span> <span class="nb">i32</span> <span class="p">{}</span> <span class="c1">//i32 is the return type in this context</span>
+</code></pre></div></div>
+
+<p>Rust also has <code class="language-plaintext highlighter-rouge">Operator Overload</code> like C/C++</p>
+
+<p>Numbers have methods. Rust uses <code class="language-plaintext highlighter-rouge">24.5_f32.round()</code> rather than <code class="language-plaintext highlighter-rouge">round(24.5_f32)</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">_</code> means nothing in numbers. It is good for enhancing readability.</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/rust_number_types.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+
+<h3 id="compare-between-types">Compare between types</h3>
+<div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
   <span class="k">let</span> <span class="n">a</span><span class="p">:</span> <span class="nb">i32</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
   <span class="k">let</span> <span class="n">b</span><span class="p">:</span> <span class="nb">u16</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
   
@@ -87,19 +365,73 @@ if __name__ = '__main__'
     <span class="nd">println!</span><span class="p">(</span><span class="s">"Ten is less than one hundred."</span><span class="p">);</span>
   <span class="p">}</span>
 <span class="p">}</span>
-</code></pre></div></div> <p><code class="language-plaintext highlighter-rouge">Trait:</code> a collection of methods in Rust. i.e. In OOD (Object Oriented Design) there are abstract classes and interfaces. In Functional Language, there are type classes.</p> <p><code class="language-plaintext highlighter-rouge">try.into()</code> returns <code class="language-plaintext highlighter-rouge">Result</code> which canbe success or fail. If fail, it will terminate the current program.</p> <p>Due to the nature of floating point numbers, <strong>avoid using floating point equality</strong>.</p> <h3 id="rational-complex-and-different-number-types">Rational, Complex and different number types</h3> <p><strong>Static method</strong> is a function that’s available for a type, but it’s not an instance of that type. <strong>Instance method</strong> operates on the instance of the type. <strong>Static method</strong> associated with the type, but you can call it without having an existing instance of the type, like <code class="language-plaintext highlighter-rouge">new()</code>.</p> <p>Use <code class="language-plaintext highlighter-rouge">new()</code> if you can. It involves less clutter.</p> <h3 id="flow-control">Flow Control</h3> <div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">item</span> <span class="k">in</span> <span class="n">container</span> <span class="p">{</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">Trait:</code> a collection of methods in Rust.  i.e. In OOD (Object Oriented Design) there are abstract classes and interfaces. In Functional Language, there are type classes.</p>
+
+<p><code class="language-plaintext highlighter-rouge">try.into()</code> returns <code class="language-plaintext highlighter-rouge">Result</code> which canbe success or fail. If fail, it will terminate the current program.</p>
+
+<p>Due to the nature of floating point numbers, <strong>avoid using floating point equality</strong>.</p>
+
+<h3 id="rational-complex-and-different-number-types">Rational, Complex and different number types</h3>
+<p><strong>Static method</strong> is a function that’s available for a type, but it’s not an instance of that type. <strong>Instance method</strong> operates on the instance of the type. <strong>Static method</strong> associated with the type, but you can call it without having an existing instance of the type, like <code class="language-plaintext highlighter-rouge">new()</code>.</p>
+
+<p>Use <code class="language-plaintext highlighter-rouge">new()</code> if you can. It involves less clutter.</p>
+
+<h3 id="flow-control">Flow Control</h3>
+<div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">item</span> <span class="k">in</span> <span class="n">container</span> <span class="p">{</span>
   <span class="c1">// some code</span>
 <span class="p">}</span>
-</code></pre></div></div> <p><br/></p> <p>There are some <strong>pitfalls</strong> in Rust’s flow control:</p> <ul> <li>Once <code class="language-plaintext highlighter-rouge">container</code> is accessed, it becomes invalid.</li> <li>Reuse requires <code class="language-plaintext highlighter-rouge">&amp;container</code>.</li> <li>Modify the item in the requires <code class="language-plaintext highlighter-rouge">&amp;mut container</code>.</li> </ul> <p><br/></p> <p><strong>Range-based for loop</strong></p> <div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">_</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..</span><span class="mi">10</span> <span class="p">{</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<p>There are some <strong>pitfalls</strong> in Rust’s flow control:</p>
+
+<ul>
+  <li>Once <code class="language-plaintext highlighter-rouge">container</code> is accessed, it becomes invalid.</li>
+  <li>Reuse requires <code class="language-plaintext highlighter-rouge">&amp;container</code>.</li>
+  <li>Modify the item in the requires <code class="language-plaintext highlighter-rouge">&amp;mut container</code>.</li>
+</ul>
+
+<p><br /></p>
+
+<p><strong>Range-based for loop</strong></p>
+<div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">_</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..</span><span class="mi">10</span> <span class="p">{</span>
   <span class="c1">//some code</span>
   <span class="c1">// 0..10 is excluding 10</span>
   <span class="c1">// 0..=10 is including 10</span>
 <span class="p">}</span>
-</code></pre></div></div> <div class="row mt-3"> <div class="col-sm mt-3 mt-md-0"> <figure> <picture> <img src="/assets/img/for_loop.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </div> </div> <p><br/></p> <p><strong>while &amp; loop</strong></p> <div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">loop</span> <span class="p">{</span>
+</code></pre></div></div>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/for_loop.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+
+<p><br /></p>
+
+<p><strong>while &amp; loop</strong></p>
+<div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">loop</span> <span class="p">{</span>
   <span class="c1">// some code</span>
   <span class="c1">// this is mainly used for servers</span>
 <span class="p">}</span>
-</code></pre></div></div> <p><br/></p> <p><strong>Break out a nested loop via labels</strong></p> <div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">'outer</span><span class="p">:</span> <span class="k">for</span> <span class="n">x</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..</span> <span class="p">{</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<p><strong>Break out a nested loop via labels</strong></p>
+<div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">'outer</span><span class="p">:</span> <span class="k">for</span> <span class="n">x</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..</span> <span class="p">{</span>
   <span class="k">for</span> <span class="n">y</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..</span> <span class="p">{</span>
     <span class="k">for</span> <span class="n">z</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..</span> <span class="p">{</span>
       <span class="k">if</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">+</span> <span class="n">z</span> <span class="o">&gt;</span> <span class="mi">1000</span> <span class="p">{</span>
@@ -110,7 +442,15 @@ if __name__ = '__main__'
     <span class="p">}</span>
   <span class="p">}</span>
 <span class="p">}</span>
-</code></pre></div></div> <p><br/></p> <p><strong>Rust has no <code class="language-plaintext highlighter-rouge">goto</code></strong></p> <p><br/></p> <p><strong>Conditional Statements</strong></p> <div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(){</span>
+</code></pre></div></div>
+<p><br /></p>
+
+<p><strong>Rust has no <code class="language-plaintext highlighter-rouge">goto</code></strong></p>
+
+<p><br /></p>
+
+<p><strong>Conditional Statements</strong></p>
+<div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(){</span>
   <span class="c1">// in rust there is no "truthy" or "falsey" statements</span>
   <span class="c1">// unlike C/C++, where 0 means false and 1 means true</span>
   <span class="c1">// in rust, there is only true or false</span>
@@ -121,7 +461,11 @@ if __name__ = '__main__'
 <span class="k">else</span> <span class="p">{</span>
 
 <span class="p">}</span>
-</code></pre></div></div> <p><br/></p> <p><code class="language-plaintext highlighter-rouge">match</code> is like <code class="language-plaintext highlighter-rouge">switch</code> in C/C++. However, <code class="language-plaintext highlighter-rouge">match</code> needs all possible options to be handled.</p> <div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</code></pre></div></div>
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">match</code> is like <code class="language-plaintext highlighter-rouge">switch</code> in C/C++. However, <code class="language-plaintext highlighter-rouge">match</code> needs all possible options to be handled.</p>
+<div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
   <span class="k">let</span> <span class="n">needle</span> <span class="o">=</span> <span class="mi">42</span><span class="p">;</span>
   <span class="k">let</span> <span class="n">haystack</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="mi">132</span><span class="p">,</span> <span class="mi">429</span><span class="p">,</span> <span class="mi">1430</span><span class="p">,</span> <span class="mi">4862</span><span class="p">];</span>
  
@@ -136,17 +480,79 @@ if __name__ = '__main__'
     <span class="p">}</span>
   <span class="p">}</span>
 <span class="p">}</span>
-</code></pre></div></div> <p><br/></p> <h3 id="defining-functions">Defining Functions</h3> <div class="row mt-3"> <div class="col-sm mt-3 mt-md-0"> <figure> <picture> <img src="/assets/img/function.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </div> </div> <p><br/></p> <h3 id="using-references">Using References</h3> <p><code class="language-plaintext highlighter-rouge">reference</code> is a value that stands in place for another value.</p> <p><code class="language-plaintext highlighter-rouge">&amp;</code> and <code class="language-plaintext highlighter-rouge">*</code> are used for reference and dereference. These operators act as unary operators, meaning that these only take one operand.</p>]]></content><author><name></name></author><category term="personal"/><category term="posts"/><category term="notes"/><summary type="html"><![CDATA[my personal notes from the book Rust in Action]]></summary></entry><entry><title type="html">a post to log my journey of building my portfolio website</title><link href="https://elijah-ye.github.io/blog/2023/portifolio/" rel="alternate" type="text/html" title="a post to log my journey of building my portfolio website"/><published>2023-12-28T09:30:00+00:00</published><updated>2023-12-28T09:30:00+00:00</updated><id>https://elijah-ye.github.io/blog/2023/portifolio</id><content type="html" xml:base="https://elijah-ye.github.io/blog/2023/portifolio/"><![CDATA[<h3 id="getting-started">Getting Started</h3> <p>I first started by forking from <a href="https://github.com/alshedivat/al-folio">al-folio</a>.</p> <p>Then, I changed the name of the forked repository to <code class="language-plaintext highlighter-rouge">elijah-ye.github.io</code> where <code class="language-plaintext highlighter-rouge">elijah-ye</code> is my Github username. If you want to do the same, you should change the forked repository to your username like <code class="language-plaintext highlighter-rouge">yourName.github.io</code>.</p> <p>There are some more steps you should take to make it up and running. Here is a good <a href="https://youtu.be/g6AJ9qPPoyc?si=9wuy_9V8S8f20N1u">video tutorial</a> that helps me to get started.</p> <h3 id="running-locally">Running Locally</h3> <p>If you want to run your portfolio locally, you can following the instructions in the README, but here is an exerpt:</p> <p>For a hands-on walkthrough of running al-folio locally without using Docker, check out <a href="https://george-gca.github.io/blog/2022/running-local-al-folio/">this cool blog post</a> by one of the community members!</p> <p>Assuming you have <a href="https://www.ruby-lang.org/en/downloads/">Ruby</a> and <a href="https://bundler.io/">Bundler</a> installed on your system (<em>hint: for ease of managing ruby gems, consider using <a href="https://github.com/rbenv/rbenv">rbenv</a></em>), and also <a href="https://www.python.org/">Python</a> and <a href="https://pypi.org/project/pip/">pip</a> (<em>hint: for ease of managing python packages, consider using a virtual environment, like <a href="https://docs.python.org/pt-br/3/library/venv.html">venv</a> or <a href="https://docs.conda.io/en/latest/">conda</a>. If you will use only <code class="language-plaintext highlighter-rouge">jupyter</code>, you can use <a href="https://pypa.github.io/pipx/">pipx</a></em>).</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>bundle <span class="nb">install</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h3 id="defining-functions">Defining Functions</h3>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/function.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<p><br /></p>
+
+<h3 id="using-references">Using References</h3>
+<p><code class="language-plaintext highlighter-rouge">reference</code> is a value that stands in place for another value.</p>
+
+<p><code class="language-plaintext highlighter-rouge">&amp;</code> and <code class="language-plaintext highlighter-rouge">*</code> are used for reference and dereference. These operators act as unary operators, meaning that these only take one operand.</p>]]></content><author><name></name></author><category term="personal" /><category term="posts" /><category term="notes" /><summary type="html"><![CDATA[my personal notes from the book Rust in Action]]></summary></entry><entry><title type="html">a post to log my journey of building my portfolio website</title><link href="https://elijah-ye.github.io/blog/2023/portifolio/" rel="alternate" type="text/html" title="a post to log my journey of building my portfolio website" /><published>2023-12-28T09:30:00+00:00</published><updated>2023-12-28T09:30:00+00:00</updated><id>https://elijah-ye.github.io/blog/2023/portifolio</id><content type="html" xml:base="https://elijah-ye.github.io/blog/2023/portifolio/"><![CDATA[<h3 id="getting-started">Getting Started</h3>
+<p>I first started by forking from <a href="https://github.com/alshedivat/al-folio">al-folio</a>.</p>
+
+<p>Then, I changed the name of the forked repository to <code class="language-plaintext highlighter-rouge">elijah-ye.github.io</code> where <code class="language-plaintext highlighter-rouge">elijah-ye</code> is my Github username. If you want to do the same, you should change the forked repository to your username like <code class="language-plaintext highlighter-rouge">yourName.github.io</code>.</p>
+
+<p>There are some more steps you should take to make it up and running. Here is a good <a href="https://youtu.be/g6AJ9qPPoyc?si=9wuy_9V8S8f20N1u">video tutorial</a> that helps me to get started.</p>
+
+<h3 id="running-locally">Running Locally</h3>
+<p>If you want to run your portfolio locally, you can following the instructions in the README, but here is an exerpt:</p>
+
+<p>For a hands-on walkthrough of running al-folio locally without using Docker, check out <a href="https://george-gca.github.io/blog/2022/running-local-al-folio/">this cool blog post</a> by one of the community members!</p>
+
+<p>Assuming you have <a href="https://www.ruby-lang.org/en/downloads/">Ruby</a> and <a href="https://bundler.io/">Bundler</a> installed on your system (<em>hint: for ease of managing ruby gems, consider using <a href="https://github.com/rbenv/rbenv">rbenv</a></em>), and also <a href="https://www.python.org/">Python</a> and <a href="https://pypi.org/project/pip/">pip</a> (<em>hint: for ease of managing python packages, consider using a virtual environment, like <a href="https://docs.python.org/pt-br/3/library/venv.html">venv</a> or <a href="https://docs.conda.io/en/latest/">conda</a>. If you will use only <code class="language-plaintext highlighter-rouge">jupyter</code>, you can use <a href="https://pypa.github.io/pipx/">pipx</a></em>).</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>bundle <span class="nb">install</span>
 <span class="c"># assuming pip is your Python package manager</span>
 <span class="nv">$ </span>pip <span class="nb">install </span>jupyter
 <span class="nv">$ </span>bundle <span class="nb">exec </span>jekyll serve <span class="nt">--lsi</span>
-</code></pre></div></div> <p>To see the template running, open your browser and go to <code class="language-plaintext highlighter-rouge">http://localhost:4000</code>. You should see a copy of the theme’s demo website. Now, feel free to customize the theme however you like. After you are done, remember to <strong>commit</strong> your final changes.</p> <h3 id="projects">Projects</h3> <p>I will now start to incorporate all of my undergraduate projects into the Project section.</p> <h3 id="bug-log">Bug Log</h3> <ol> <li>I encountered this bug when I was trying to add a new post. I searched up <a href="https://github.com/alshedivat/al-folio/issues/1828">online</a> and I found this quick fix, thought it might not be the best fix, but it works in my case. <blockquote> <p>change the <code class="language-plaintext highlighter-rouge">related_blog_post</code> from <code class="language-plaintext highlighter-rouge">true</code> tp <code class="language-plaintext highlighter-rouge">false</code> then it should work.</p> </blockquote> </li> </ol> <h3 id="exploring">Exploring</h3> <p>As for now, I am justing reading through the <code class="language-plaintext highlighter-rouge">#sample-posts</code> to see what the template has to offer. I will update if I find something really interesting!</p> <p>Thanks for reading!</p>]]></content><author><name></name></author><category term="personal"/><category term="posts"/><category term="project-log"/><summary type="html"><![CDATA[this is my journey]]></summary></entry><entry><title type="html">a post with TikZJax</title><link href="https://elijah-ye.github.io/blog/2023/tikzjax/" rel="alternate" type="text/html" title="a post with TikZJax"/><published>2023-12-12T22:25:00+00:00</published><updated>2023-12-12T22:25:00+00:00</updated><id>https://elijah-ye.github.io/blog/2023/tikzjax</id><content type="html" xml:base="https://elijah-ye.github.io/blog/2023/tikzjax/"><![CDATA[<p>This is an example post with TikZ code. TikZJax converts script tags (containing TikZ code) into SVGs.</p> <script type="text/tikz">
+</code></pre></div></div>
+
+<p>To see the template running, open your browser and go to <code class="language-plaintext highlighter-rouge">http://localhost:4000</code>. You should see a copy of the theme’s demo website. Now, feel free to customize the theme however you like. After you are done, remember to <strong>commit</strong> your final changes.</p>
+
+<h3 id="projects">Projects</h3>
+<p>I will now start to incorporate all of my undergraduate projects into the Project section.</p>
+
+<h3 id="bug-log">Bug Log</h3>
+<ol>
+  <li>I encountered this bug when I was trying to add a new post. I searched up <a href="https://github.com/alshedivat/al-folio/issues/1828">online</a> and I found this quick fix, thought it might not be the best fix, but it works in my case.
+    <blockquote>
+      <p>change the <code class="language-plaintext highlighter-rouge">related_blog_post</code> from <code class="language-plaintext highlighter-rouge">true</code> tp <code class="language-plaintext highlighter-rouge">false</code> then it should work.</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h3 id="exploring">Exploring</h3>
+<p>As for now, I am justing reading through the <code class="language-plaintext highlighter-rouge">#sample-posts</code> to see what the template has to offer. I will update if I find something really interesting!</p>
+
+<p>Thanks for reading!</p>]]></content><author><name></name></author><category term="personal" /><category term="posts" /><category term="project-log" /><summary type="html"><![CDATA[this is my journey]]></summary></entry><entry><title type="html">a post with TikZJax</title><link href="https://elijah-ye.github.io/blog/2023/tikzjax/" rel="alternate" type="text/html" title="a post with TikZJax" /><published>2023-12-12T22:25:00+00:00</published><updated>2023-12-12T22:25:00+00:00</updated><id>https://elijah-ye.github.io/blog/2023/tikzjax</id><content type="html" xml:base="https://elijah-ye.github.io/blog/2023/tikzjax/"><![CDATA[<p>This is an example post with TikZ code. TikZJax converts script tags (containing TikZ code) into SVGs.</p>
+
+<script type="text/tikz">
 \begin{tikzpicture}
     \draw[red,fill=black!60!red] (0,0) circle [radius=1.5];
     \draw[green,fill=black!60!green] (0,0) circle [x radius=1.5cm, y radius=10mm];
     \draw[blue,fill=black!60!blue] (0,0) circle [x radius=1cm, y radius=5mm, rotate=30];
 \end{tikzpicture}
-</script>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="diagrams"/><summary type="html"><![CDATA[this is what included TikZ code could look like]]></summary></entry><entry><title type="html">a post with bibliography</title><link href="https://elijah-ye.github.io/blog/2023/post-bibliography/" rel="alternate" type="text/html" title="a post with bibliography"/><published>2023-07-12T13:56:00+00:00</published><updated>2023-07-12T13:56:00+00:00</updated><id>https://elijah-ye.github.io/blog/2023/post-bibliography</id><content type="html" xml:base="https://elijah-ye.github.io/blog/2023/post-bibliography/"><![CDATA[<p>This post shows how to add bibliography to simple blog posts. If you would like something more academic, check the <a href="/blog/2021/distill/">distill style post</a>.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="bib"/><summary type="html"><![CDATA[an example of a blog post with bibliography]]></summary></entry><entry><title type="html">a post with jupyter notebook</title><link href="https://elijah-ye.github.io/blog/2023/jupyter-notebook/" rel="alternate" type="text/html" title="a post with jupyter notebook"/><published>2023-07-04T12:57:00+00:00</published><updated>2023-07-04T12:57:00+00:00</updated><id>https://elijah-ye.github.io/blog/2023/jupyter-notebook</id><content type="html" xml:base="https://elijah-ye.github.io/blog/2023/jupyter-notebook/"><![CDATA[<p>To include a jupyter notebook in a post, you can use the following code:</p> <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{::nomarkdown}
+</script>]]></content><author><name></name></author><category term="sample-posts" /><category term="formatting" /><category term="diagrams" /><summary type="html"><![CDATA[this is what included TikZ code could look like]]></summary></entry><entry><title type="html">a post with bibliography</title><link href="https://elijah-ye.github.io/blog/2023/post-bibliography/" rel="alternate" type="text/html" title="a post with bibliography" /><published>2023-07-12T13:56:00+00:00</published><updated>2023-07-12T13:56:00+00:00</updated><id>https://elijah-ye.github.io/blog/2023/post-bibliography</id><content type="html" xml:base="https://elijah-ye.github.io/blog/2023/post-bibliography/"><![CDATA[<p>This post shows how to add bibliography to simple blog posts. If you would like something more academic, check the <a href="/blog/2021/distill/">distill style post</a>.</p>]]></content><author><name></name></author><category term="sample-posts" /><category term="formatting" /><category term="bib" /><summary type="html"><![CDATA[an example of a blog post with bibliography]]></summary></entry><entry><title type="html">a post with jupyter notebook</title><link href="https://elijah-ye.github.io/blog/2023/jupyter-notebook/" rel="alternate" type="text/html" title="a post with jupyter notebook" /><published>2023-07-04T12:57:00+00:00</published><updated>2023-07-04T12:57:00+00:00</updated><id>https://elijah-ye.github.io/blog/2023/jupyter-notebook</id><content type="html" xml:base="https://elijah-ye.github.io/blog/2023/jupyter-notebook/"><![CDATA[<p>To include a jupyter notebook in a post, you can use the following code:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{::nomarkdown}
 {% assign jupyter_path = "assets/jupyter/blog.ipynb" | relative_url %}
 {% capture notebook_exists %}{% file_exists assets/jupyter/blog.ipynb %}{% endcapture %}
 {% if notebook_exists == "true" %}
@@ -155,7 +561,23 @@ if __name__ = '__main__'
     <span class="nt">&lt;p&gt;</span>Sorry, the notebook you are looking for does not exist.<span class="nt">&lt;/p&gt;</span>
 {% endif %}
 {:/nomarkdown}
-</code></pre></div></div> <p>Let’s break it down: this is possible thanks to <a href="https://github.com/red-data-tools/jekyll-jupyter-notebook">Jekyll Jupyter Notebook plugin</a> that allows you to embed jupyter notebooks in your posts. It basically calls <a href="https://nbconvert.readthedocs.io/en/latest/usage.html#convert-html"><code class="language-plaintext highlighter-rouge">jupyter nbconvert --to html</code></a> to convert the notebook to an html page and then includes it in the post. Since <a href="https://jekyllrb.com/docs/configuration/markdown/">Kramdown</a> is the default Markdown renderer for Jekyll, we need to surround the call to the plugin with the <a href="https://kramdown.gettalong.org/syntax.html#extensions">::nomarkdown</a> tag so that it stops processing this part with Kramdown and outputs the content as-is.</p> <p>The plugin takes as input the path to the notebook, but it assumes the file exists. If you want to check if the file exists before calling the plugin, you can use the <code class="language-plaintext highlighter-rouge">file_exists</code> filter. This avoids getting a 404 error from the plugin and ending up displaying the main page inside of it instead. If the file does not exist, you can output a message to the user. The code displayed above outputs the following:</p> <p>Sorry, the notebook you are looking for does not exist.</p> <p>Note that the jupyter notebook supports both light and dark themes.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="jupyter"/><summary type="html"><![CDATA[an example of a blog post with jupyter notebook]]></summary></entry><entry><title type="html">a post with custom blockquotes</title><link href="https://elijah-ye.github.io/blog/2023/custom-blockquotes/" rel="alternate" type="text/html" title="a post with custom blockquotes"/><published>2023-05-12T19:53:00+00:00</published><updated>2023-05-12T19:53:00+00:00</updated><id>https://elijah-ye.github.io/blog/2023/custom-blockquotes</id><content type="html" xml:base="https://elijah-ye.github.io/blog/2023/custom-blockquotes/"><![CDATA[<p>This post shows how to add custom styles for blockquotes. Based on <a href="https://github.com/sighingnow/jekyll-gitbook">jekyll-gitbook</a> implementation.</p> <p>We decided to support the same custom blockquotes as in <a href="https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-06-30-tips_warnings_dangers.html">jekyll-gitbook</a>, which are also found in a lot of other sites’ styles. The styles definitions can be found on the <a href="https://github.com/alshedivat/al-folio/blob/master/_sass/_base.scss">_base.scss</a> file, more specifically:</p> <div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* Tips, warnings, and dangers */</span>
+</code></pre></div></div>
+
+<p>Let’s break it down: this is possible thanks to <a href="https://github.com/red-data-tools/jekyll-jupyter-notebook">Jekyll Jupyter Notebook plugin</a> that allows you to embed jupyter notebooks in your posts. It basically calls <a href="https://nbconvert.readthedocs.io/en/latest/usage.html#convert-html"><code class="language-plaintext highlighter-rouge">jupyter nbconvert --to html</code></a> to convert the notebook to an html page and then includes it in the post. Since <a href="https://jekyllrb.com/docs/configuration/markdown/">Kramdown</a> is the default Markdown renderer for Jekyll, we need to surround the call to the plugin with the <a href="https://kramdown.gettalong.org/syntax.html#extensions">::nomarkdown</a> tag so that it stops processing this part with Kramdown and outputs the content as-is.</p>
+
+<p>The plugin takes as input the path to the notebook, but it assumes the file exists. If you want to check if the file exists before calling the plugin, you can use the <code class="language-plaintext highlighter-rouge">file_exists</code> filter. This avoids getting a 404 error from the plugin and ending up displaying the main page inside of it instead. If the file does not exist, you can output a message to the user. The code displayed above outputs the following:</p>
+
+
+
+
+    <p>Sorry, the notebook you are looking for does not exist.</p>
+
+
+<p>Note that the jupyter notebook supports both light and dark themes.</p>]]></content><author><name></name></author><category term="sample-posts" /><category term="formatting" /><category term="jupyter" /><summary type="html"><![CDATA[an example of a blog post with jupyter notebook]]></summary></entry><entry><title type="html">a post with custom blockquotes</title><link href="https://elijah-ye.github.io/blog/2023/custom-blockquotes/" rel="alternate" type="text/html" title="a post with custom blockquotes" /><published>2023-05-12T19:53:00+00:00</published><updated>2023-05-12T19:53:00+00:00</updated><id>https://elijah-ye.github.io/blog/2023/custom-blockquotes</id><content type="html" xml:base="https://elijah-ye.github.io/blog/2023/custom-blockquotes/"><![CDATA[<p>This post shows how to add custom styles for blockquotes. Based on <a href="https://github.com/sighingnow/jekyll-gitbook">jekyll-gitbook</a> implementation.</p>
+
+<p>We decided to support the same custom blockquotes as in <a href="https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-06-30-tips_warnings_dangers.html">jekyll-gitbook</a>, which are also found in a lot of other sites’ styles. The styles definitions can be found on the <a href="https://github.com/alshedivat/al-folio/blob/master/_sass/_base.scss">_base.scss</a> file, more specifically:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* Tips, warnings, and dangers */</span>
 <span class="nc">.post</span> <span class="nc">.post-content</span> <span class="nt">blockquote</span> <span class="p">{</span>
     <span class="k">&amp;</span><span class="nc">.block-tip</span> <span class="p">{</span>
     <span class="nl">border-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-tip-block</span><span class="p">);</span>
@@ -196,23 +618,109 @@ if __name__ = '__main__'
     <span class="p">}</span>
   <span class="p">}</span>
 <span class="p">}</span>
-</code></pre></div></div> <p>A regular blockquote can be used as following:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; This is a regular blockquote</span>
+</code></pre></div></div>
+
+<p>A regular blockquote can be used as following:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; This is a regular blockquote</span>
 <span class="gt">&gt; and it can be used as usual</span>
-</code></pre></div></div> <blockquote> <p>This is a regular blockquote and it can be used as usual</p> </blockquote> <p>These custom styles can be used by adding the specific class to the blockquote, as follows:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; ##### TIP</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>This is a regular blockquote
+and it can be used as usual</p>
+</blockquote>
+
+<p>These custom styles can be used by adding the specific class to the blockquote, as follows:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; ##### TIP</span>
 <span class="gt">&gt;</span>
 <span class="gt">&gt; A tip can be used when you want to give advice</span>
 <span class="gt">&gt; related to a certain content.</span>
 {: .block-tip }
-</code></pre></div></div> <blockquote class="block-tip"> <h5 id="tip">TIP</h5> <p>A tip can be used when you want to give advice related to a certain content.</p> </blockquote> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; ##### WARNING</span>
+</code></pre></div></div>
+
+<blockquote class="block-tip">
+  <h5 id="tip">TIP</h5>
+
+  <p>A tip can be used when you want to give advice
+related to a certain content.</p>
+</blockquote>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; ##### WARNING</span>
 <span class="gt">&gt;</span>
 <span class="gt">&gt; This is a warning, and thus should</span>
 <span class="gt">&gt; be used when you want to warn the user</span>
 {: .block-warning }
-</code></pre></div></div> <blockquote class="block-warning"> <h5 id="warning">WARNING</h5> <p>This is a warning, and thus should be used when you want to warn the user</p> </blockquote> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; ##### DANGER</span>
+</code></pre></div></div>
+
+<blockquote class="block-warning">
+  <h5 id="warning">WARNING</h5>
+
+  <p>This is a warning, and thus should
+be used when you want to warn the user</p>
+</blockquote>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; ##### DANGER</span>
 <span class="gt">&gt;</span>
 <span class="gt">&gt; This is a danger zone, and thus should</span>
 <span class="gt">&gt; be used carefully</span>
 {: .block-danger }
-</code></pre></div></div> <blockquote class="block-danger"> <h5 id="danger">DANGER</h5> <p>This is a danger zone, and thus should be used carefully</p> </blockquote>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="blockquotes"/><summary type="html"><![CDATA[an example of a blog post with custom blockquotes]]></summary></entry><entry><title type="html">a post with table of contents on a sidebar</title><link href="https://elijah-ye.github.io/blog/2023/sidebar-table-of-contents/" rel="alternate" type="text/html" title="a post with table of contents on a sidebar"/><published>2023-04-25T14:14:00+00:00</published><updated>2023-04-25T14:14:00+00:00</updated><id>https://elijah-ye.github.io/blog/2023/sidebar-table-of-contents</id><content type="html" xml:base="https://elijah-ye.github.io/blog/2023/sidebar-table-of-contents/"><![CDATA[<p>This post shows how to add a table of contents as a sidebar.</p> <h2 id="adding-a-table-of-contents">Adding a Table of Contents</h2> <p>To add a table of contents to a post as a sidebar, simply add</p> <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">toc</span><span class="pi">:</span>
+</code></pre></div></div>
+
+<blockquote class="block-danger">
+  <h5 id="danger">DANGER</h5>
+
+  <p>This is a danger zone, and thus should
+be used carefully</p>
+</blockquote>]]></content><author><name></name></author><category term="sample-posts" /><category term="formatting" /><category term="blockquotes" /><summary type="html"><![CDATA[an example of a blog post with custom blockquotes]]></summary></entry><entry><title type="html">a post with table of contents on a sidebar</title><link href="https://elijah-ye.github.io/blog/2023/sidebar-table-of-contents/" rel="alternate" type="text/html" title="a post with table of contents on a sidebar" /><published>2023-04-25T14:14:00+00:00</published><updated>2023-04-25T14:14:00+00:00</updated><id>https://elijah-ye.github.io/blog/2023/sidebar-table-of-contents</id><content type="html" xml:base="https://elijah-ye.github.io/blog/2023/sidebar-table-of-contents/"><![CDATA[<p>This post shows how to add a table of contents as a sidebar.</p>
+
+<h2 id="adding-a-table-of-contents">Adding a Table of Contents</h2>
+
+<p>To add a table of contents to a post as a sidebar, simply add</p>
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">toc</span><span class="pi">:</span>
   <span class="na">sidebar</span><span class="pi">:</span> <span class="s">left</span>
-</code></pre></div></div> <p>to the front matter of the post. The table of contents will be automatically generated from the headings in the post. If you wish to display the sidebar to the right, simply change <code class="language-plaintext highlighter-rouge">left</code> to <code class="language-plaintext highlighter-rouge">right</code>.</p> <h3 id="example-of-sub-heading-1">Example of Sub-Heading 1</h3> <p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p> <h3 id="example-of-another-sub-heading-1">Example of another Sub-Heading 1</h3> <p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p> <h2 data-toc-text="Customizing" id="customizing-your-table-of-contents">Customizing Your Table of Contents</h2> <p>If you want to learn more about how to customize the table of contents of your sidebar, you can check the <a href="https://afeld.github.io/bootstrap-toc/">bootstrap-toc</a> documentation. Notice that you can even customize the text of the heading that will be displayed on the sidebar.</p> <h3 id="example-of-sub-heading-2">Example of Sub-Heading 2</h3> <p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p> <h3 id="example-of-another-sub-heading-2">Example of another Sub-Heading 2</h3> <p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="toc"/><category term="sidebar"/><summary type="html"><![CDATA[an example of a blog post with table of contents on a sidebar]]></summary></entry><entry><title type="html">a post with audios</title><link href="https://elijah-ye.github.io/blog/2023/audios/" rel="alternate" type="text/html" title="a post with audios"/><published>2023-04-25T10:25:00+00:00</published><updated>2023-04-25T10:25:00+00:00</updated><id>https://elijah-ye.github.io/blog/2023/audios</id><content type="html" xml:base="https://elijah-ye.github.io/blog/2023/audios/"><![CDATA[<p>This is an example post with audios. It supports local audio files.</p> <div class="row mt-3"> <div class="col-sm mt-3 mt-md-0"> <figure> <audio src="/assets/audio/epicaly-short-113909.mp3" controls=""/> </figure> </div> <div class="col-sm mt-3 mt-md-0"> <figure> <audio src="https://cdn.pixabay.com/download/audio/2022/06/25/audio_69a61cd6d6.mp3" controls=""/> </figure> </div> </div> <div class="caption"> A simple, elegant caption looks good between video rows, after each row, or doesn't have to be there at all. </div>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="audios"/><summary type="html"><![CDATA[this is what included audios could look like]]></summary></entry></feed>
+</code></pre></div></div>
+<p>to the front matter of the post. The table of contents will be automatically generated from the headings in the post. If you wish to display the sidebar to the right, simply change <code class="language-plaintext highlighter-rouge">left</code> to <code class="language-plaintext highlighter-rouge">right</code>.</p>
+
+<h3 id="example-of-sub-heading-1">Example of Sub-Heading 1</h3>
+
+<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>
+
+<h3 id="example-of-another-sub-heading-1">Example of another Sub-Heading 1</h3>
+
+<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>
+
+<h2 data-toc-text="Customizing" id="customizing-your-table-of-contents">Customizing Your Table of Contents</h2>
+
+<p>If you want to learn more about how to customize the table of contents of your sidebar, you can check the <a href="https://afeld.github.io/bootstrap-toc/">bootstrap-toc</a> documentation. Notice that you can even customize the text of the heading that will be displayed on the sidebar.</p>
+
+<h3 id="example-of-sub-heading-2">Example of Sub-Heading 2</h3>
+
+<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>
+
+<h3 id="example-of-another-sub-heading-2">Example of another Sub-Heading 2</h3>
+
+<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>]]></content><author><name></name></author><category term="sample-posts" /><category term="formatting" /><category term="toc" /><category term="sidebar" /><summary type="html"><![CDATA[an example of a blog post with table of contents on a sidebar]]></summary></entry><entry><title type="html">a post with audios</title><link href="https://elijah-ye.github.io/blog/2023/audios/" rel="alternate" type="text/html" title="a post with audios" /><published>2023-04-25T10:25:00+00:00</published><updated>2023-04-25T10:25:00+00:00</updated><id>https://elijah-ye.github.io/blog/2023/audios</id><content type="html" xml:base="https://elijah-ye.github.io/blog/2023/audios/"><![CDATA[<p>This is an example post with audios. It supports local audio files.</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <audio src="/assets/audio/epicaly-short-113909.mp3" controls="" />
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <audio src="https://cdn.pixabay.com/download/audio/2022/06/25/audio_69a61cd6d6.mp3" controls="" />
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    A simple, elegant caption looks good between video rows, after each row, or doesn't have to be there at all.
+</div>]]></content><author><name></name></author><category term="sample-posts" /><category term="formatting" /><category term="audios" /><summary type="html"><![CDATA[this is what included audios could look like]]></summary></entry></feed>
